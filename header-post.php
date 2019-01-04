@@ -46,64 +46,59 @@
   <header role="banner">
     <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
     <div class="header-img-wrapper <?php echo $space_class ?>">
-      <div class="content-effect-wrapper">
-        <div id="content-effect">
-          <div class="post-header-title">
+      <div class="post-header-title">
 
-            <span>
-              <?php echo $parent_cat_name ?>
-            </span>
+        <span>
+          <?php echo $parent_cat_name ?>
+        </span>
 
-            <?php
-              if ($child_cat_name) {
-            ?>
-                <div class="post-header-sub-title">
-                  <?php echo $child_cat_name ?>
-                </div>
-            <?php
-              };
-            ?>
-
-          </div>
-
-          <?php if ($parent_cat_name === 'No Money Action' || $child_cat_name === 'No Money Action') {?>
-            <div class="child-category-item-wrap">
-              <ul>
-                <li>
-                  <a href="/international-cooperation">
-                    国際協力
-                  </a>
-                </li>
-                <li>
-                  <a href="/nature-conservation">
-                    自然保護
-                  </a>
-                </li>
-                <li>
-                  <a href="/regional-vitalization">
-                    地域活性
-                  </a>
-                </li>
-                <li>
-                  <a href="/study-abroad">
-                    留学
-                  </a>
-                </li>
-                <li>
-                  <a href="/intern">
-                    インターン
-                  </a>
-                </li>
-                <li>
-                  <a href="/other">
-                    その他
-                  </a>
-                </li>
-              </ul>
+        <?php
+          if ($child_cat_name) {
+        ?>
+            <div class="post-header-sub-title">
+              <?php echo $child_cat_name ?>
             </div>
-          <?php } ?>
+        <?php
+          };
+        ?>
 
-        </div>
       </div>
+
+      <?php if ($parent_cat_name === 'No Money Action' || $child_cat_name === 'No Money Action') {?>
+        <div class="child-category-item-wrap">
+          <ul>
+            <li>
+              <a href="/international-cooperation">
+                国際協力
+              </a>
+            </li>
+            <li>
+              <a href="/nature-conservation">
+                自然保護
+              </a>
+            </li>
+            <li>
+              <a href="/regional-vitalization">
+                地域活性
+              </a>
+            </li>
+            <li>
+              <a href="/study-abroad">
+                留学
+              </a>
+            </li>
+            <li>
+              <a href="/intern">
+                インターン
+              </a>
+            </li>
+            <li>
+              <a href="/other">
+                その他
+              </a>
+            </li>
+          </ul>
+        </div>
+      <?php } ?>
     </div>
 	</header>

@@ -1,125 +1,31 @@
-<?php get_header('front'); ?>
+<?php get_header(); ?>
 
-  <div class='front-page-wrapper'>
-    <div class='front-page-head-wrapper'>
-      <div class="content-effect-wrapper">
-        <div class="content-effect">
-          <div class='main-content'>
-            <div class="moire-title-wrap">
-              <span class='moire-title'>
-                moire
-              </span>
+  <div class="main-content">
+    <?php
+    $count = 0;
+    $paged = (int) get_query_var('paged');
+    $args = array(
+      'posts_per_page' => 9,
+      'paged' => $paged,
+      'orderby' => 'post_date',
+      'order' => 'DESC',
+      'post_type' => 'post',
+      'post_status' => 'publish'
+    );
+    $the_query = new WP_Query($args);
+    if ( $the_query->have_posts() ) :
+      while ( $the_query->have_posts() ) : $the_query->the_post();
 
-              <span class="moire-sub-title">
-                社会貢献活動に繋ぐWebメディア
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+      $count += 1;
 
-      <div class="right-top-column">
-        <div class="right-top-column-content">
-          <span>
-            <div class='right-top-column-content-title'>
-            moire(モアレ)
-            </div>
-            <p>
-              私たちmoireのMissionは、<span class='font-bold'>社会貢献活動の促進</span>です。
-            </p>
-            <p>
-              このMission達成のために私たちは、お金を目的にしない活動 <span class='font-bold'>「No Money Action」</span> をHPで発信していきます。
-            </p>
+      switch ($count) {
+        case 1:
+          get_template_part( 'template-parts/header', 'article' );
+          break;
 
-            <p>
-              No Money Action の中で社会貢献活動についても発信することで、社会貢献活動に関心のない人を社会貢献活動に繋いでいきます。
-            </p>
-          </span>
-        </div>
-
-        <div class="mission-button-wrap">
-          <div class="mission-button">
-            <a href="/about-us">moireの基本理念</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="block-wrapper">
-      <div class="HP-content-wrapper">
-        <div class="popular_article_wrap_title">
-          <h2>人気記事</h2>
-          <p>
-            各記事の最後に設置されたいいねボタンをクリックすることで結果が変動します。</br>
-            気に入った記事があったらぜひいいねしてください！
-          </p>
-        </div>
-
-        <div class="popular_article">
-          <?php
-            $the_query = new WP_Query(array(
-            	'post_status' => 'published',
-            	'post_type' => 'post',
-            	'orderby' => 'meta_value_num',
-            	'meta_key' => '_liked',
-            	'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
-              'posts_per_page'=> '3'
-            ));
-
-            $count = 1;
-
-            while($the_query->have_posts()):$the_query->the_post();
-          ?>
-
-          <li class="HP-content-column popular_article-column popular_article-column-<?php echo $count?>">
-            <div class="popular_article_title popular_article_title-<?php echo $count?>">
-              <?php echo $count?>
-            </div>
-            <div class="popular_article_img">
-              <?php the_post_thumbnail('large'); ?>
-            </div>
-
-            <div class="popular_article_content">
-              <div class="popular_article-desc">
-                <div class="popular_article-tag">
-                  <?php
-                    $tags = get_the_tags();
-                    if ($tags) {
-                      foreach($tags as $tag) {
-                        echo '<span>' . $tag->name . '</span>';
-                      }
-                    }
-                  ?>
-                </div>
-                <div class="popular_article-wrap">
-                  <?php
-                    moire_theme_posted_by_no_name()
-                  ?>
-                </div>
-              </div>
-
-              <?php
-                the_title( '<h2 class="archive-item-title">', '</h2>' );
-              ?>
-            </div>
-
-
-            <a href="<?php the_permalink(); ?>"></a>
-          </li>
-
-        <?php
-          $count += 1;
-          endwhile;
-        ?>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="between_content">
-      <div class="between_content_effect">
-      </div>
-    </div>
+        case 4;
+          get_template_part( 'template-parts/content' );
+    ?>
 
     <div class="block-wrapper">
       <div class="HP-content-wrapper">
@@ -202,7 +108,37 @@
         </div>
       </div>
     </div>
+
+    <?php
+          break;
+
+        default:
+          get_template_part( 'template-parts/content' );
+          break;
+      }
+
+        endwhile;
+      endif;
+    ?>
+
+    <?php
+    if ($the_query->max_num_pages > 1) {
+      echo paginate_links(array(
+        'base' => get_pagenum_link(1) . '%_%',
+        'format' => 'page/%#%/',
+        'current' => max(1, $paged),
+        'total' => $the_query->max_num_pages
+      ));
+    }
+    ?>
+
+    <?php wp_reset_postdata(); ?>
+
+    <?php get_template_part( 'template-parts/header', 'article' ); ?>
+    
   </div>
+
+  <?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
 
 <?php
 get_footer();

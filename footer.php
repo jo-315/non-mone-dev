@@ -2,12 +2,7 @@
 // 全ページ共通フッター
 ?>
 
-	<div class="between_content">
-		<div class="between_content_effect">
-		</div>
-	</div>
-
-	<div class="sns-block-wrapper">
+	<!-- <div class="sns-block-wrapper">
 		<a
 			href="/"
 			target="_blank"
@@ -40,7 +35,7 @@
 				class="sns-social-icon"
 			/>
 		</a>
-	</div>
+	</div> -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container container-footer">

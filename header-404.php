@@ -22,11 +22,8 @@
   <header role="banner">
     <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
     <div class="header-img-wrapper">
-      <div class="content-effect-wrapper">
-        <div id="content-effect">
-          <div class="post-header-title">
-          <span>404  Not Found</span>
-        </div>
+      <div class="post-header-title">
+        <span>404  Not Found</span>
       </div>
     </div>
 	</header>

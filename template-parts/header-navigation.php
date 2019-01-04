@@ -5,15 +5,14 @@
   <div class="header-logo-wrap">
     <a href="/">
       <img
-        src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
-        class="moire-logo"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/non_mone_logo.png"
       >
     </a>
   </div>
 
   <div class='header-title-wrap'>
     <a href="/">
-      <span class="header-title">moire</span>
+      <span class="header-title">ノンマネ</span>
     </a>
   </div>
 
@@ -27,7 +26,7 @@
         </li>
         <li>
           <a href="/category/article/">
-            No Money Action
+            Non Money Action
           </a>
           <div class="header-main-navigation-child">
             <ul>
@@ -76,18 +75,18 @@
         </li>
         <li>
           <a href="/about-us/">
-            ABOUT US
+            記事募集
           </a>
           <div class="header-main-navigation-child">
             <ul>
               <li>
-                <a href="/about-us/">
-                  ABOUT US
+                <a href="#">
+                  ライター募集
                 </a>
               </li>
               <li>
-                <a href="/member">
-                  MEMBER
+                <a href="#">
+                  寄稿の募集
                 </a>
               </li>
             </ul>
@@ -95,18 +94,18 @@
         </li>
         <li>
           <a href="/contact-us/">
-            お問い合わせ
+            運営団体
           </a>
           <div class="header-main-navigation-child">
             <ul>
               <li>
-                <a href="/contact-us/">
-                  お問い合わせ
+                <a href="#">
+                  ライター一覧
                 </a>
               </li>
               <li>
-                <a href="/recruit">
-                  メンバー募集
+                <a href="#">
+                  寄稿者一覧
                 </a>
               </li>
               <li>

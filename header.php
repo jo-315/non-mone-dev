@@ -5,6 +5,8 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <link rel="preload" href=<?php echo get_stylesheet_uri() ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href=<?php echo get_stylesheet_uri() ?>></noscript>
+  <link rel="preload" href=<?php echo get_template_directory_uri() . '/css/index.css' ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/index.css' ?>></noscript>
   <link rel="preload" href=<?php echo (get_template_directory_uri() . '/css/front.css') ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href=<?php echo (get_template_directory_uri() . '/css/font-awesome.min.css') ?>></noscript>
   <script>

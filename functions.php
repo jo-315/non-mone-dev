@@ -221,10 +221,17 @@ endif;
 /**
  * Post thumbnail
  */
-function moire_post_thumbnail() {
+function moire_post_thumbnail($head = false) {
 	$post_format = get_post_format();
+
+	$class = '';
+
+	if ( $head ) {
+		$class = 'head_thumbnail';
+	}
+
 	if ( has_post_thumbnail() ) {
-		echo '<div class="post-thumbnail-wrap">';
+		echo '<div class="post-thumbnail-wrap ' . $class . '">';
 		the_post_thumbnail();
 		echo '</div>';
 	} else {

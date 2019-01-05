@@ -1,6 +1,6 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-post' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'head-article' ); ?>>
 	<?php
-		moire_post_thumbnail()
+		moire_post_thumbnail(true)
 	?>
 
 	<div class="entry-header">

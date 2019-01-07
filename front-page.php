@@ -22,6 +22,7 @@
         switch ($count) {
           case 1:
             get_template_part( 'template-parts/header', 'article' );
+            get_template_part( 'template-parts/content', 'slider' );
             break;
 
           case 5;

@@ -13,11 +13,11 @@
     <div class="archive-content-inner-wrap">
 			<div class="archive-content-desc">
 				<div class="archive-item-tag">
-		      <?php
-						$tags = get_the_tags();
-						if ($tags) {
-							foreach($tags as $tag) {
-								echo '<span>' . $tag->name . '</span>';
+					<?php
+						$categories = get_the_category();
+						if ($categories) {
+							foreach ($categories as $cat ) {
+								echo '<span>' . $cat->name . '</span>';
 							}
 						}
 					?>

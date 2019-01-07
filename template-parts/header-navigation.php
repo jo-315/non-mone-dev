@@ -93,7 +93,7 @@
           </div>
         </li>
         <li>
-          <a href="/contact-us/">
+          <a href="https://moire-org.com/" target="_blank">
             運営団体
           </a>
           <div class="header-main-navigation-child">

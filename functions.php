@@ -69,8 +69,12 @@ add_action( 'widgets_init', 'moire_widgets_init' );
 function moire_scripts() {
 	// jqueryの読み込み
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'jquery-moire' ,get_template_directory_uri() . '/js/functions.js', array('jquery'));
+	wp_enqueue_script( 'jquery-moire' ,get_template_directory_uri() . '/js/functions.js', array('jquery', 'glide.min.js'));
   wp_enqueue_script( 'lazysize-moire' ,get_template_directory_uri() . '/js/lazysizes.min.js');
+
+	// styleの読み込み
+	wp_enqueue_style( 'yangyang-theme-style_grid-core', get_template_directory_uri() . '/css/glide.core.min.css' );
+	wp_enqueue_style( 'yangyang-theme-style_grid-theme', get_template_directory_uri() . '/css/glide.theme.min.css' );
 }
 
 function add_header_image() {

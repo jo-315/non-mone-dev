@@ -24,4 +24,4 @@ jQuery(function($) {
   $('.site-info').click(() => {
     $('html, body').animate({ scrollTop: 0 });
   })
-})
+});

@@ -16,8 +16,19 @@ header-article
 */
 .head-article {
 	width: 800px;
-	height: 400px;
+	height: 360px;
   margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.head-article::after {
+	content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  border-bottom: solid 2px #ff2a36;
 }
 
 .head_thumbnail {
@@ -32,7 +43,7 @@ Content > Item
 	background: #ffffff;
 	float: left;
 	width: 390px;
-	height: 350px;
+	height: 250px;
 	margin: 0 10px 50px;
 	position: relative;
 }
@@ -43,15 +54,17 @@ Content > Item
 	left: 25%;
 	bottom: 0;
 	width: 50%;
-	border-bottom: solid 1px #2fcdb4;
+	border-bottom: solid 1px #ff2a36;
 }
 
-.blog-post:hover {
+.blog-post:hover,
+.head-article:hover {
 	opacity: 0.5;
 	top: 3px;
 }
 
-.blog-post a {
+.blog-post a,
+.head-article a {
 	position: absolute;
 	display: block;
 	width: 100%;

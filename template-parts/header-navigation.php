@@ -64,16 +64,6 @@
           </div>
         </li>
         <li>
-          <a href="/category/organization/">
-            団体一覧
-          </a>
-        </li>
-        <li>
-          <a href="/category/event/">
-            イベント一覧
-          </a>
-        </li>
-        <li>
           <a href="/about-us/">
             記事募集
           </a>

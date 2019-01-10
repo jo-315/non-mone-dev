@@ -1,5 +1,4 @@
-
-<script src=<?php echo get_template_directory_uri() . "/js/glide.min.js"?>></script>
+<!-- <script src=<?php echo get_template_directory_uri() . "/js/glide.min.js"?>></script>
 
 <style type="text/css">
   .glide_wrapper {
@@ -34,4 +33,4 @@
     focusAt: 'center',
     autoplay: 2000
   }).mount()
-</script>
+</script> -->

@@ -1574,36 +1574,108 @@ topのナビゲーション
 /*
 header ヘッダー
  */
+.header_main {
+	height: 500px;
+	padding: 60px 0 0;
+	position: relative;
+}
 
-.header_glide_wrapper {
-  margin-top: 50px;
-	height: 300px;
+.header_main_top_background {
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	top: 50px;
+	background: #373735;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: 20px;
+	padding-top: 4px;
+}
+
+.glide_wrapper {
+	position: relative;
+}
+
+.glide_wrapper:before {
+	content: '';
+	position: absolute;
+	height: 310px;
+	width: 100%;
+	top: 20px;
 	background: #373735;
 }
 
-.header_glide_wrapper li {
+.glide_wrapper li {
 	height: 280px !important;
-	width: 420px !important;
-  margin-top: 10px;
+  margin-top: 30px;
 	background: #FFFFFF;
 	opacity: 0.5;
 }
 
-.header_glide_wrapper img {
-	height: 280px !important;
-	width: 420px !important;
+.glide_wrapper img {
+	height: 100%;
+	width: 100%;
   object-fit: cover;
 }
 
-.header_glide_wrapper .glide__slide--active {
-	height: 330px !important;
-  margin: 5px 0;
-	opacity: 1 !important;
-	box-shadow: 3px 1px 8px 1px;
+.glide_wrapper .glide__slide_desc {
+	display: none;
+	position: absolute;
 }
 
-.header_glide_wrapper .glide__slide--active img {
-	height: 330px !important;
+.glide_wrapper .glide__slide--active {
+	height: 400px !important;
+  margin: 5px 0 0;
+	opacity: 1 !important;
+	position: relative;
+	z-index: -2;
+}
+
+.glide_wrapper .glide__slide--active img {
+	height: 100%;
+	box-shadow: 3px 1px 8px 1px #373735;
+	z-index: 10;
+	border-bottom: solid 2px #FFCC99;
+}
+
+.glide_wrapper .glide__slide--active .glide__slide_desc {
+	display: block;
+}
+
+.glide_wrapper .glide__slide--active .glide__slide_desc--left {
+	bottom: 0px;
+	left: -150px;
+	font-size: 30px;
+	font-weight: bold;
+	background: #FFCC99;
+	color: #ffffff;
+	width: 150px;
+	border-bottom: solid 2px #FFCC99;
+	padding: 0 0 0 14px;
+}
+
+.glide_wrapper .glide__slide--active .glide__slide_desc--right {
+	bottom: 0;
+  right: calc(-100% - 48px);
+  border-bottom: solid 2px #FFCC99;
+  width: 400px;
+  padding: 0 0 0 20px;
+}
+
+.glide_wrapper .glide__slide--active:after {
+	display: none;
+	background: none;
+	border: solid 4px red;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	bottom: 50px;
+  left: -10%;
+  width: 120%;
+  height: 40px;
+  padding: 6px 13px;
+	z-index: -1;
 }
 
 /*

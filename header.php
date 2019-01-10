@@ -19,49 +19,97 @@
 	<header role="banner">
     <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
 
-    <div class="header_glide_wrapper">
-      <div class="glide_wrapper">
-        <div class="glide header_glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <a href="#">
-                  <img src="http://nonmonedev.local/wp-content/uploads/2018/12/大切なのは言語じゃない。年末だし、ロシア留学で気付いたことを振り返ります-80.jpg" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="#">
-                  <img src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="#">
-                  <img src="http://nonmonedev.local/wp-content/uploads/2018/12/IMG_6092.jpg" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="#">
-                  <img src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div class="header_main">
+      <div class="header_main_top_background">
+        お金を目的としない活動 NON MONEY ACTION
+      </div>
+        <div class="glide_wrapper">
+          <div class="glide header_glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <a href="#">
+                    <img src="http://nonmonedev.local/wp-content/uploads/2018/12/大切なのは言語じゃない。年末だし、ロシア留学で気付いたことを振り返ります-80.jpg" alt="">
+                  </a>
+                  <div class="glide__slide_desc glide__slide_desc--left">
+                      国際協力
+                  </div>
+                  <div class="glide__slide_desc glide__slide_desc--right">
+                    ああああああああ
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <a href="#">
+                    <img src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg" alt="">
+                  </a>
+                  <div class="glide__slide_desc">
+                    <div>
+                      国際協力
+                    </div>
+                    <div>
+                      ああああああああ
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <a href="#">
+                    <img src="http://nonmonedev.local/wp-content/uploads/2018/12/IMG_6092.jpg" alt="">
+                  </a>
+                  <div class="glide__slide_desc">
+                    <div>
+                      国際協力
+                    </div>
+                    <div>
+                      ああああああああ
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <a href="#">
+                    <img src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg" alt="">
+                  </a>
+                  <div class="glide__slide_desc">
+                    <div>
+                      国際協力
+                    </div>
+                    <div>
+                      ああああああああ
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <a href="#">
+                    <img src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg" alt="">
+                  </a>
+                  <div class="glide__slide_desc">
+                    <div>
+                      国際協力
+                    </div>
+                    <div>
+                      ああああああああ
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>></button>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>></button>
+            </div>
           </div>
         </div>
-      </div>
     </div>
+
 	</header>
 
   <script>
     new Glide('.header_glide', {
-      startAt: 1,
-      perView: 3,
-      focusAt: 'center',
-      autoplay: 3000
+      type: 'carousel',
+      startAt: 0,
+      perView: 4,
+      focusAt: 1,
+      autoplay: 3000000
     }).mount()
   </script>
 

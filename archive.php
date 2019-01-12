@@ -6,7 +6,7 @@ blog,event,orgで同じもの
 ?>
 
 <?php
-get_header('post');
+get_header();
 ?>
 
   <div id="content" class="site-content post-content">

@@ -1,14 +1,12 @@
 .left-content {
 	width: 70%;
 	float: left;
-	padding-top: 40px;
 	background: #ffffff;
 }
 
 .main-content {
 	width: calc(800px + 20px);
 	margin: 50px auto;
-  overflow: auto;
 }
 
 /*

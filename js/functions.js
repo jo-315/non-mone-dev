@@ -21,7 +21,20 @@ jQuery(function($) {
  */
 // scroll to top
 jQuery(function($) {
-  $('.site-info').click(() => {
-    $('html, body').animate({ scrollTop: 0 });
-  })
+  const topBtn = $('.back-top-button')
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        topBtn.fadeIn();
+    } else {
+        topBtn.fadeOut();
+    }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+  });
 });

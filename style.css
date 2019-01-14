@@ -1098,11 +1098,6 @@ p.dropcap:first-letter {
 		width: auto;
 	}
 
-	.footer-back-top {
-		width: auto;
-		margin-top: 0;
-	}
-
 	/*-----------
      * Posts and pages
      -----------*/
@@ -1710,6 +1705,27 @@ contents
 	float: left;
 }
 
+/*
+back to top
+ */
+.back-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 12px;
+  background: #373735;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 15px 10px;
+}
+
+.back-top-button:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
 /* pagination */
 .pagination_wrap {
 	text-align: center;
@@ -2085,15 +2101,6 @@ footer
  widget
   */
 
-  .footer-widget-wrap {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 30px;
-    width: 25%;
-  }
-
   .site-footer .widget-title {
     background: #575756;
     font-size: 16px;
@@ -2116,36 +2123,10 @@ footer
     clear: both;
   }
 
-   .footer-back-top {
-     /* ここにjquery */
-   	width: 100%;
-     margin-top: -10px;
-     text-align: center;
-   }
-
-  @media screen and (min-width: 1140px) {
-   .footer-widget-wrap {
-     padding-right: 60px;
-     padding-left: 60px;
-   }
-  }
-
-  @media screen and (max-width: 992px) {
-    .footer-widget-wrap {
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-  }
-
   @media screen and (max-width: 700px) {
     .footer-widget-wrap {
       padding-right: 40px;
       padding-left: 40px;
-    }
-
-    .footer-widget-wrap {
-      width: 50%;
-      height: 450px;
     }
 
     .footer-widget-img {
@@ -2158,33 +2139,11 @@ footer
     .footer-inner {
       padding: 0px 0px 35px;
     }
-
-    .footer-widget-wrap {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-
     .footer-widget-img {
       width: 150px;
       margin: 0 auto;
     }
-
-    .footer-widget-wrap {
-      width: 350px;
-      height: auto;
-      float: none;
-      margin: 0 auto;
-    }
-
  }
-
- @media screen and (max-width: 380px) {
-   .footer-widget-wrap {
-     width: 300px;
-     height: auto;
-   }
- }
-
  /* Share button */
  .snsShareArea {
 	 margin-bottom: 40px;
@@ -2694,7 +2653,6 @@ footer
     background: #ffffff;
     margin-bottom: 10px;
     position: relative;
-    box-shadow: 0px 0px 3px 3px;
   }
 
   .single-content-area {

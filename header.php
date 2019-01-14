@@ -95,6 +95,10 @@
 
     <?php get_template_part( 'template-parts/content', 'keyword' ); ?>
 
+    <div class="back-top-button">
+        Top<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+
 	</header>
 
   <script>

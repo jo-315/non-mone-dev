@@ -67,7 +67,7 @@
           <a href="/about-us/">
             記事募集
           </a>
-          <div class="header-main-navigation-child">
+          <div class="header-main-navigation-child header-main-navigation-big-child">
             <ul>
               <li>
                 <a href="#">
@@ -83,11 +83,16 @@
           </div>
         </li>
         <li>
-          <a href="https://moire-org.com/" target="_blank">
-            運営団体
+          <a href="/">
+            ノンマネとは
           </a>
           <div class="header-main-navigation-child">
             <ul>
+              <li>
+                <a href="https://moire-org.com/" target="_blank">
+                  運営団体
+                </a>
+              </li>
               <li>
                 <a href="#">
                   ライター一覧

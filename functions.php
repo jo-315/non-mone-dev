@@ -75,6 +75,7 @@ function moire_scripts() {
 	// styleの読み込み
 	wp_enqueue_style( 'yangyang-theme-style_grid-core', get_template_directory_uri() . '/css/glide.core.min.css' );
 	wp_enqueue_style( 'yangyang-theme-style_grid-theme', get_template_directory_uri() . '/css/glide.theme.min.css' );
+	wp_enqueue_style( 'yangyang-theme-style_fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 }
 
 function add_header_image() {

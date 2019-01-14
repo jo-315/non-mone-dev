@@ -123,6 +123,17 @@
     <div class="sidebar_item_title">
       <span>キーワード</span>
     </div>
+
+    <div class="sidebar_keyword_wrapper">
+      <ul>
+        <li>
+          <a href="#">
+            国際
+            <i class="fa fa-arrow-circle-right"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
 </aside>

@@ -25,25 +25,6 @@ summary {
 	display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-	display: inline-block;
-	vertical-align: baseline;
-	max-width: 100%;
-}
-
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-[hidden],
-template {
-	display: none;
-}
-
 a {
 	background-color: transparent;
 }
@@ -569,44 +550,6 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}
-
-/* Do not show the outline on the skip link target. */
-#content[tabindex="-1"]:focus {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
@@ -757,30 +700,6 @@ p.dropcap:first-letter {
 .page-main-header {
 	position: relative;
 	padding: 70px 0 0;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1245,7 +1164,7 @@ p.dropcap:first-letter {
 
 body {
 	color: #373735;
-  background: #ffffff;
+  background: #fff;
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 	font-size: 16px;
 	line-height: 1.75;
@@ -1287,11 +1206,11 @@ topのナビゲーション
 	background: #ffffff;
   position: fixed;
   width: 100%;
-	height: 50px;
+	height: 52px;
   z-index: 9999;
   top: 0;
 	box-sizing: border-box;
-	border-bottom: solid 2px #ff2a36;
+	border-bottom: solid 1px #ff2a36;
 }
 
 /* Logo */
@@ -1427,10 +1346,15 @@ topのナビゲーション
 .header-main-navigation-child {
 	display: none;
 	position: absolute;
-	background: #cccccc;
+	background: #ffffff;
 	width: 100%;
 	text-align: center;
 	transition: all .2s;
+	border-bottom: solid 2px #ff2a36;
+}
+
+.header-main-navigation-big-child {
+	width: 150px;
 }
 
 .header-main-navigation-child ul{
@@ -1571,13 +1495,14 @@ header ヘッダー
 	position: absolute;
 	height: 60px;
 	width: 100%;
-	top: 50px;
+	top: 52px;
 	background: #373735;
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	letter-spacing: 20px;
 	padding-top: 4px;
+	border-top: solid 1px #ff2a36;
 }
 
 .glide_wrapper {
@@ -2032,8 +1957,7 @@ sidebar-moire
 
 .sidebar-moire-wrap {
 	overflow: auto;
-	margin-top: 5px;
-	height: 140px;
+	margin-top: 15px;
 }
 
 .sidebar_moire_logo {
@@ -2046,6 +1970,7 @@ sidebar-moire
 	float: left;
 	width: calc(100% - 110px);
 	margin-left: 10px;
+	font-size: 14px;
 }
 
 .sidebar_moire_sns {
@@ -2098,6 +2023,36 @@ sidebar-moire
 
 .sidebar_moire_org_button:hover a {
   color: #ffffff;
+}
+
+/*
+sidebar-keyword
+ */
+.sidebar_keyword_wrapper {
+	margin-top: 10px;
+}
+
+.sidebar_keyword_wrapper ul {
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar_keyword_wrapper li {
+	list-style: none;
+	width: 50%;
+	float: left;
+	border-bottom: solid 1px #CCCCCC;
+	padding: 5px 10px;
+}
+
+.sidebar_keyword_wrapper a {
+	text-decoration: none;
+	color: #373735;
+	font-size: 16px;
+}
+
+.sidebar_keyword_wrapper a:hover {
+	opacity: 0.7;
 }
 
 /*

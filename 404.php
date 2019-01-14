@@ -1,5 +1,5 @@
 <?php
-get_header('404');
+get_header();
 ?>
 
 <div class="no_page_content_block">

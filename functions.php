@@ -39,7 +39,7 @@ function moire_widgets_init() {
 		3, array(
 			/* translators: d: Sidebar number */
 			'name'          => esc_html__( 'フッターウィジェットエリア%d' ),
-			'id'            => 'moire-footer-widget-area',
+			'id'            => 'moire-footer-moire-area',
 			'class'         => 'col-sm-4',
 			'description'   => esc_html__( 'ここにウィジェットを追加します。' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',

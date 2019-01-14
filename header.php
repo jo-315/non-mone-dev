@@ -95,6 +95,10 @@
 
     <?php get_template_part( 'template-parts/content', 'keyword' ); ?>
 
+    <div>
+      portfolio
+    </div>
+
     <div class="back-top-button">
         Top<i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </div>
@@ -111,5 +115,4 @@
     }).mount()
   </script>
 
-	<div id="content" class="site-content">
-		<div class="container">
+	<div class="site-content">

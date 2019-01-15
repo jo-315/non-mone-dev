@@ -132,6 +132,18 @@
             <i class="fa fa-arrow-circle-right"></i>
           </a>
         </li>
+        <li>
+          <a href="#">
+            国際
+            <i class="fa fa-arrow-circle-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            国際
+            <i class="fa fa-arrow-circle-right"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>

@@ -602,6 +602,7 @@ a:active {
 --------------------------------------------------------------*/
 .site-content {
 	overflow: auto;
+	position: relative;
 }
 
 .page-header {
@@ -1618,9 +1619,8 @@ contents
 	height: 60px;
 	width: 100%;
 	position: relative;
-	background: #f5f5f5;
-	border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+	background: #373735;
+	color: #ddd;
 	padding: 5px 30px;
 }
 
@@ -1669,6 +1669,56 @@ contents
 	color: #cecece;
 	font-size: 20px;
 	float: left;
+}
+
+/*
+portfolio
+ */
+.portfolio_wrapper {
+	width: 100px;
+	height: 300px;
+	position: absolute;
+	background: #f5f5f5;
+	top: 0;
+}
+
+.portfolio_wrapper p {
+	padding-left: 5px;
+	margin: 5px 0;
+	font-size: 12px;
+	font-family: serif;
+	letter-spacing: 1px;
+}
+
+.portfolio_wrapper ul {
+	padding: 0;
+}
+
+.portfolio_wrapper li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.portfolio_wrapper div {
+	width: 90px;
+	height: 60px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.portfolio_wrapper img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio_wrapper li:hover {
+	opacity: 0.6;
+}
+
+.portfolio_wrapper li:hover img {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
 }
 
 /*
@@ -2067,6 +2117,11 @@ footer
 	 color: #cccccc;
    margin-bottom: 5px;
  }
+
+ .footer-moire-desc-link a:hover {
+   color: #D0324B;
+ }
+
  /*
  widget
   */
@@ -2094,7 +2149,7 @@ footer
 
 	.footer-moire-img {
 		width: 50px;
-		height: 50px;
+		height: 60px;
 		float: left;
 	}
 

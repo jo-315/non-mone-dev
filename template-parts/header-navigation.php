@@ -31,32 +31,32 @@
           <div class="header-main-navigation-child">
             <ul>
               <li>
-                <a href="/international-cooperation">
+                <a href="/category/international-cooperation/">
                   国際協力
                 </a>
               </li>
               <li>
-                <a href="/nature-conservation">
+                <a href="/category/nature-conservation">
                   自然保護
                 </a>
               </li>
               <li>
-                <a href="/regional-vitalization">
+                <a href="/category/regional-vitalization">
                   地域活性
                 </a>
               </li>
               <li>
-                <a href="/study-abroad">
+                <a href="/category/study-abroad">
                   留学
                 </a>
               </li>
               <li>
-                <a href="/intern">
+                <a href="/category/intern">
                   インターン
                 </a>
               </li>
               <li>
-                <a href="/other">
+                <a href="/category/other">
                   その他
                 </a>
               </li>
@@ -64,18 +64,18 @@
           </div>
         </li>
         <li>
-          <a href="/about-us/">
+          <a>
             記事募集
           </a>
           <div class="header-main-navigation-child header-main-navigation-big-child">
             <ul>
               <li>
-                <a href="#">
+                <a href="/recruit">
                   ライター募集
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/article_contribution">
                   寄稿の募集
                 </a>
               </li>
@@ -83,23 +83,28 @@
           </div>
         </li>
         <li>
-          <a href="/">
+          <a>
             ノンマネとは
           </a>
           <div class="header-main-navigation-child">
             <ul>
+              <li>
+                <a href="about-us">
+                  ノンマネとは
+                </a>
+              </li>
               <li>
                 <a href="https://moire-org.com/" target="_blank">
                   運営団体
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/member">
                   ライター一覧
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/contributer">
                   寄稿者一覧
                 </a>
               </li>

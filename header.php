@@ -95,10 +95,6 @@
 
     <?php get_template_part( 'template-parts/content', 'keyword' ); ?>
 
-    <div>
-      portfolio
-    </div>
-
     <div class="back-top-button">
         Top<i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </div>
@@ -116,3 +112,6 @@
   </script>
 
 	<div class="site-content">
+    <?php
+      if (is_front_page()) {get_template_part( 'template-parts/content', 'portfolio' );};
+    ?>

@@ -1,12 +1,5 @@
 <?php
-/*
-カテゴリー毎、投稿一覧
-blog,event,orgで同じもの
-*/
-?>
-
-<?php
-get_header('article_contribution');
+get_header();
 ?>
 
 <div class="page_content_block">

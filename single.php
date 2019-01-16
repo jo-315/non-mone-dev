@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-	<div id="content" class="site-content post-content">
+	<div id="content" class="post-content">
 		<div class="content-wrap">
 			<div id="primary" class="single-content-area">
 				<main id="main" role="main">
@@ -62,7 +62,7 @@ get_header();
 							    array_push($category_ID,$category->cat_ID);
 							}
 
-							$posts_number = 6; // 表示したい件数を指定
+							$posts_number = 4; // 表示したい件数を指定
 
 							$args = array(
 							    'post__not_in'=>array($post->ID), // 現在のページの投稿を除外
@@ -118,6 +118,8 @@ get_header();
 	    </div>
 		</div>
 	</div>
+
+	<?php get_template_part( 'template-parts/single', 'sidebar' ); ?>
 
 <?php
 get_footer();

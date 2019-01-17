@@ -601,8 +601,11 @@ a:active {
 # Content
 --------------------------------------------------------------*/
 .site-content {
-	overflow: auto;
 	position: relative;
+}
+
+.main_content_wrapper {
+	overflow: auto;
 }
 
 .page-header {
@@ -2661,3 +2664,34 @@ footer
   		height: 150px;
   	}
   }
+
+/*
+パンくず
+ */
+.breadcrumb-wrap {
+  margin-left: 100px;
+	padding-left: 50px;
+	margin-top: 5px;
+}
+
+.breadcrumb-wrap ul {
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumb-wrap li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.breadcrumb-wrap a {
+	text-decoration: none;
+}
+.breadcrumb-wrap i {
+	margin-right: 5px;
+}
+
+.breadcrumb-wrap a:hover {
+	opacity: 0.6;
+}

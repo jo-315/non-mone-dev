@@ -120,3 +120,9 @@
     <?php
       if (is_front_page() || is_single()) {get_template_part( 'template-parts/content', 'portfolio' );};
     ?>
+
+    <div class="breadcrumb-wrap">
+      <?php breadcrumb(); ?>
+    </div>
+
+    <div class="main_content_wrapper">

@@ -4,7 +4,7 @@ single
  /*
  Content
  */
-.site-content {
+.main_content_wrapper {
   display: flex;
   overflow: unset !important;
 }

@@ -4,18 +4,33 @@ get_header();
 
 <div class="page_content_block">
   <div class="recruit_title">
-    <h1>理念達成のために、共に活動してくれるメンバーを募集しています。</h1>
+    <h1>ライター募集中</h1>
   </div>
-  <div class="page_content--text">
-    <div class="about_sub_title recruit_sub_title--1">
-       <h2>ライター</h2>
-    </div>
 
-    <h3>現在行っている皆さんの no money action を、共に発信していきませんか？</h3>
+  <div class="page_content--text">
+    <h4>僕たちと共に、情報発信していっていただける方を募集しています！！</h4>
     <div class="recruit_text">
-      ご自身の no money action についての記事を書いていただき、共に情報を発信していただける方を探しています。</br>
+      『お金以外のものを目的』とした『何かしらの活動』についての記事を執筆し、共に情報を発信していただける方を探しています。</br>
       </br>
-      書いていただく内容は社会貢献活動に関係していない内容でも構いません。皆さんの記事でこのHPを訪れてくれた方が、他の方の社会貢献活動に興味を持ってもらうことも、目的の一つとしています。</br>
+       ノンマネのミッションは、社会貢献活動に興味の無い方に興味を持ってもらうことです。
+       そしてそのために、社会貢献活動ではない記事によりノンマネのHPに訪れてもらい、ノンマネを通して社会貢献活動の記事を読み少しでも興味を持っていただけたらと考えています。
+       そのため、社会貢献に興味を持ってもらえるような記事はもちろん、他にも様々な記事を発信していきたいです。</br>
+       </br>
+       皆さんにはご自身の活動がもっと多くの人に知ってもらえるいい機会として、活用していただければと思っています。</br>
+       </br>
+       皆さんと一緒に、より多くの人に情報を発信していけることを楽しみにしています！</br>
+       </br>
+       より詳しく知りたい方は、下のライターマニュアルも参考にしてください。</br>
+       </br>
+       <div class="align-center">
+         <a href="https://moire.xsrv.jp/moire_writter_manual.pdf" target="_blank" rel="noreferrer">ライターマニュアル.pdf</a>
+       </div>
+       </br>
+       事業計画書はこちらになります。</br>
+       </br>
+       <div class="align-center">
+         <a href='https://moire.xsrv.jp/about_moire_02.pdf' target='_blank' rel="noreferrer">ノンマネ事業計画書</a>
+       </div>
     </div>
 
     <div class="recruit_detail">
@@ -25,29 +40,26 @@ get_header();
             活動内容
           </li>
           <li>
-            ご自身の no money action を書いていただきます。
+            『お金以外のものを目的』とした『何かしらの活動』についての記事の執筆
           </li>
         </ul>
         <ul>
           <li>
-            活動の流れ
+            活動までの流れ
           </li>
           <li>
-            下記のお問い合わせよりご連絡ください。その後、一度メール等で打ち合わせさせていただいたのち、実際に記事を書いていただきます。</br>
-            </br>
-            記事作成の期限は自由です。その期限までに書いていただき、完成したものを送っていただいたら、また次の期限を決めていただきます。以降はその繰り返しとなります。</br>
-            </br>
-            より詳しく要項を知りたい場合は、下のマニュアルの参照をお願いします。</br>
-            </br>
-            <div class="align-center">
-              <a href="https://moire.xsrv.jp/moire_writter_manual.pdf" target="_blank" rel="noreferrer">moireライターマニュアル.pdf</a>
-            </div>
-            </br>
-            事業計画書はこちらになります。</br>
-            </br>
-            <div class="align-center">
-              <a href='https://moire.xsrv.jp/about_moire_02.pdf' target='_blank' rel="noreferrer">miore事業計画書</a>
-            </div>
+            下記のお問い合わせよりご連絡ください。その後、一度打ち合わせさせていただいたのち、実際に記事を書いていただきます。
+          </li>
+        </ul>
+        <ul>
+          <li>
+            備考
+          </li>
+          <li>
+            ・文章の上手い下手に関しては重要視していません。それよりは、どういった想いで書いてるのか、どういった活動をされているのかの方が大事だと思っています。</br>
+            ・ライターさんは任期半年から募集しています。</br>
+            ・執筆はご自身の時間のあるタイミングでお願いします。特別期限を設けるということはしません。</br>
+            ・継続的な執筆が難しい場合も、単発での執筆である寄稿という形での募集も行なっています。詳しくは<a href="/article_contribution">こちら</a>をご覧ください。</br>
           </li>
         </ul>
         <ul>
@@ -55,76 +67,13 @@ get_header();
             応募する
           </li>
           <li>
+            こちらよりお願いします。ご質問等ある場合もこちらからご連絡ください。</br>
+            </br>
             <div class='align-center'>
-              こちらよりお願いします。</br>
               <a href=/contact-us/>お問い合わせ</a>
             </div>
           </li>
         </ul>
-      </table>
-    </div>
-  </div>
-</div>
-
-<div class="between_content recruit_between">
-  <div class="between_content_effect">
-  </div>
-</div>
-
-<div class="page_content_block">
-  <div class="page_content--text">
-    <div class="about_sub_title recruit_sub_title--1">
-      <h2>運営メンバー</h2>
-    </div>
-
-    <h3>団体運営メンバーとしてmoireの理念達成を共に目指しませんか？</h3>
-    <div class="recruit_text">
-      記事作成以外にも、団体の運営という部分でメンバーの募集を行っています。</br>
-      </br>
-      新規ライターの採用、ライターの活動環境の向上、活動規模の拡大。これらのために活動してもらいます。
-    </div>
-
-    <div class="recruit_detail">
-      <table>
-        <ul>
-          <li>
-            活動内容
-          </li>
-          <li>
-            ・渉外</br>
-            新規ライターの採用のための活動を行っていただきます。</br>
-            </br>
-            ・ライターのがより活動しやすくなるために、様々な施策を行っていただきます。</br>
-            </br>
-            ・SNS運営</br>
-            </br>
-            ・イベント運営（現状は未着手ですが、今後は取り組んでいきたいと考えています。）</br>
-            </br>
-            ・その他、団体の規模拡大のための企画等も行ってもらう予定です。
-          </li>
-        </ul>
-        <ul>
-          <li>
-            活動の流れ
-          </li>
-          <li>
-            下記のお問い合わせよりご連絡ください。その後一度直接あってお話しさせていただいたのち、活動していただきます。</br>
-            </br>
-            実際にどのように活動を進めていくかは、最初の面談で決めましょう！
-          </li>
-        </ul>
-        <ul>
-          <li>
-            応募する
-          </li>
-          <li>
-            <div class='align-center'>
-              こちらよりお願いします。</br>
-              <a href=/contact-us/>お問い合わせ</a>
-            </div>
-          </li>
-        </ul>
-
       </table>
     </div>
   </div>

@@ -5,7 +5,7 @@
 }
 
 .main-content {
-	width: calc(800px + 20px);
+	width: calc(700px + 20px);
 	margin: 50px auto;
 	overflow: auto;
 	display: inline-block;
@@ -15,7 +15,7 @@
 header-article
 */
 .head-article {
-	width: 800px;
+	width: 700px;
 	height: 360px;
   margin: 0 auto;
 	position: relative;
@@ -42,7 +42,7 @@ Content > Item
 .blog-post {
 	background: #ffffff;
 	float: left;
-	width: 390px;
+	width: 340px;
 	height: 250px;
 	margin: 0 10px 50px;
 	position: relative;

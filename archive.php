@@ -9,7 +9,7 @@ get_header();
     <div class="archive-content-wrap">
 
 			<div id="primary">
-				<main id="main" role="main">
+				<main id="main" role="main" class="archive_main">
 					<?php
   					while ( have_posts() ) :
   						the_post();

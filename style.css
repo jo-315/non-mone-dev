@@ -1678,8 +1678,8 @@ contents
 portfolio
  */
 .portfolio_wrapper {
-	width: 100px;
-	height: 300px;
+	width: 150px;
+	height: 400px;
 	position: absolute;
 	background: #f5f5f5;
 	top: 0;
@@ -1704,8 +1704,8 @@ portfolio
 }
 
 .portfolio_wrapper div {
-	width: 90px;
-	height: 60px;
+	width: 140px;
+	height: 100px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -2212,14 +2212,14 @@ footer
 
  .page_content_block {
    width: 100%;
-   background: #ffffff;
    text-align: center;
-   font-size: 17px;
-   padding: 50px 10px;
+   font-size: 16px;
+   padding: 20px 10px;
  }
 
- .page_content_block h3 {
+ .page_content--text h4 {
    border-bottom: solid 2px #D0324B;
+	 font-size: 18px;
  }
 
  .page_content--text {
@@ -2228,19 +2228,55 @@ footer
  }
 
  @media screen and (max-width: 650px) {
-   .page_content_block h1 {
-     font-size: 30px;
-     margin: 15px 0;
-   }
-
    .page_content--text {
      width: 100%;
      padding: 0 20px;
    }
+ }
 
-   .page_content_block h3 {
-     font-size: 18px;
-   }
+ /*
+ about
+  */
+ .about_content_block--img_wrap {
+	 margin: 0 auto;
+ }
+
+ .about_content_block--img {
+	 width: 401px;
+ }
+
+ .about_content_wrap {
+	 text-align: left;
+	 margin-bottom: 100px;
+ }
+
+ .about_content_wrap_imgs {
+	 overflow: auto;
+	 margin-top: 20px;
+ }
+
+ .about_content_wrap_imgs img {
+	 object-fit: cover;
+	 width: 100%;
+	 padding: 2px 4px;
+ }
+
+ .about_content_wrap_imgs--left,
+ .about_content_wrap_imgs--right {
+	 float: left;
+	 width: 50%;
+ }
+
+ .about_content_wrap_imgs--left img {
+	 height: 99%;
+ }
+
+ .about_content_wrap_imgs--right img:nth-child(1) {
+	 height: 120px;
+ }
+
+ .about_content_wrap_imgs--right img:nth-child(2) {
+	 height: 280px;
  }
 
  /* Recruit */
@@ -2290,13 +2326,14 @@ footer
  .recruit_detail li:nth-child(odd) {
    font-weight: bold;
    width: 200px;
-   margin: 0 auto;
+	 margin: 0 auto;
    border-bottom: solid #2fcbb2;
  }
 
  .recruit_detail li:nth-child(even) {
    text-align: left;
    padding: 20px 0;
+	 margin-bottom: 40px;
  }
 
  .recruit_detail .last{
@@ -2519,36 +2556,20 @@ footer
   front archive
    */
   .archive-content-wrap {
-  	padding: 30px 70px 70px;
-   box-shadow: 0px 0px 3px 3px;
-   position: relative;
-   z-index: 2;
-  	overflow: hidden;
+  	padding: 30px 0 70px;
+    box-shadow: 0px 0px 3px 3px;
   }
-
-  @media screen and (max-width: 1230px) {
-  	.archive-content-wrap {
-  		padding: 30px 50px 70px;
-  	}
-  }
-
-  @media screen and (max-width: 1070px) {
-  	.archive-content-wrap {
-  		padding: 30px 30px 70px;
-  	}
-  }
-
-  @media screen and (max-width: 614px) {
-  	.archive-content-wrap {
-  		padding: 30px 5px 50px;
-  	}
-  }
-
   @media screen and (max-width: 380px) {
   	.archive-content-wrap {
   		padding: 30px 0 35px;
   	}
   }
+
+	.archive_main {
+		width: 1080px;
+		margin: 0 auto;
+		overflow: auto;
+	}
 
   /*
   ## Title

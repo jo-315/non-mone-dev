@@ -1486,40 +1486,44 @@ header ヘッダー
 	opacity: 0.5;
 }
 
+.glide__slide_desc--right {
+	font-size: 14px;
+}
+
 .glide__slide--1 img,
 .glide__slide--1 .glide__slide_desc--right,
 .glide__slide--4 img,
 .glide__slide--4 .glide__slide_desc--right {
-	border-bottom: solid 2px #ff4f09;
+	border-bottom: solid 2px rgb(255, 143, 87);
 }
 
 .glide__slide--1 .glide__slide_desc--left,
 .glide__slide--4 .glide__slide_desc--left {
-	border-bottom: solid 2px #ff4f09;
-	background: #ff4f09;
+	border-bottom: solid 2px rgb(255, 143, 87);
+	background: rgb(255, 143, 87);
 }
 
 .glide__slide--2 img,
 .glide__slide--2 .glide__slide_desc--right,
 .glide__slide--5 img,
 .glide__slide--5 .glide__slide_desc--right {
-	border-bottom: solid 2px #2fcdb4;
+	border-bottom: solid 2px rgb(75, 211, 154);
 }
 
 .glide__slide--2 .glide__slide_desc--left,
 .glide__slide--5 .glide__slide_desc--left {
-	border-bottom: solid 2px #2fcdb4;
-	background: #2fcdb4;
+	border-bottom: solid 2px rgb(75, 211, 154);
+	background: rgb(75, 211, 154);
 }
 
 .glide__slide--3 img,
 .glide__slide--3 .glide__slide_desc--right {
-	border-bottom: solid 2px #b647eb;
+	border-bottom: solid 2px rgb(60, 156, 211);
 }
 
 .glide__slide--3 .glide__slide_desc--left {
-	border-bottom: solid 2px #b647eb;
-	background: #b647eb;
+	border-bottom: solid 2px rgb(60, 156, 211);
+	background: rgb(60, 156, 211);
 }
 
 .glide_wrapper img {
@@ -1563,9 +1567,9 @@ header ヘッダー
 }
 
 .glide_wrapper .glide__slide--active .glide__slide_desc--right {
-	bottom: 0;
-  right: calc(-100% - 48px);
-  width: 400px;
+  bottom: 0;
+  right: -300px;
+  width: 300px;
   padding: 0 0 0 20px;
 }
 
@@ -1828,15 +1832,14 @@ widget
 sidebar
  */
 .sidebar-wrap {
-	width: 30%;
 	float: left;
 	text-align: left;
-	padding-left: 20px;
+	padding-right: 20px;
+	width: 300px;
 }
 
 .sidebar_item_wrapper {
 	margin-top: 50px;
-	width: 300px;
 }
 
 .sidebar_item_title {
@@ -1860,6 +1863,19 @@ sidebar
 	background-repeat: no-repeat;
 	padding: 5px 0 0 50px;
 }
+
+@media screen and (max-width: 1260px) {
+	.sidebar-wrap {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 961px) {
+	.sidebar-wrap {
+		width: 560px;
+	}
+}
+
 /**
 * 人気記事
 */
@@ -2375,6 +2391,10 @@ footer
    margin: 0 20px 40px;
  }
 
+ .contributer_content {
+	border-bottom: solid 0.5px #ff2a36;
+ }
+
  .member_img {
    margin-bottom: 5px;
    overflow: auto;
@@ -2604,12 +2624,6 @@ footer
 
   .archive-content-inner-wrap .byline {
     display: block;
-  }
-
-  @media screen and (max-width: 950px) {
-  	.archive-content-inner-wrap {
-  		padding: 20px 10px 0px;
-  	}
   }
 
   @media screen and (max-width: 500px) {

@@ -4,7 +4,16 @@
 */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-post' ); ?>>
+<article
+  id="post-<?php the_ID(); ?>"
+	<?php
+	  if(is_front_page()) {
+	    post_class( 'front-post' );
+		} else {
+			post_class( 'archive-post' );
+		}
+	 ?>
+>
 	<?php
 		moire_post_thumbnail()
 	?>

@@ -40,7 +40,7 @@
                       国際協力
                   </div>
                   <div class="glide__slide_desc glide__slide_desc--right">
-                    ああああああああ
+                    日本を始め、世界各地で活躍しているライターの奮闘記
                   </div>
                 </li>
                 <li class="glide__slide glide__slide--2">
@@ -51,7 +51,7 @@
                       自然保護
                   </div>
                   <div class="glide__slide_desc glide__slide_desc--right">
-                    ああああああああ
+                    自然の中で体を動かして作業するのは、想像以上に楽しいはず！？
                   </div>
                 </li>
                 <li class="glide__slide glide__slide--3">
@@ -59,10 +59,10 @@
                     <img src="http://nonmonedev.local/wp-content/uploads/2018/12/IMG_6092.jpg" alt="">
                   </a>
                   <div class="glide__slide_desc glide__slide_desc--left">
-                      地域活性
+                    地域活性
                   </div>
                   <div class="glide__slide_desc glide__slide_desc--right">
-                    ああああああああ
+                    地域から日本を元気に！
                   </div>
                 </li>
                 <li class="glide__slide glide__slide--4">
@@ -73,7 +73,7 @@
                       留学
                   </div>
                   <div class="glide__slide_desc glide__slide_desc--right">
-                    ああああああああ
+                    留学を通して学んだこと、感じたこと、楽しかったこと。留学の日常を
                   </div>
                 </li>
                 <li class="glide__slide glide__slide--5">
@@ -84,7 +84,7 @@
                       インターン
                   </div>
                   <div class="glide__slide_desc glide__slide_desc--right">
-                    ああああああああ
+                    インターンだからできること。こんな貴重な機会はそうはない
                   </div>
                 </li>
               </ul>

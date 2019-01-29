@@ -51,9 +51,9 @@
         <?php wp_reset_postdata(); ?>
       </div>
     </div>
-  </div>
 
-  <?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+    <?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+  </div>
 
 <?php
 get_footer();

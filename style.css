@@ -1167,7 +1167,7 @@ topのナビゲーション
 	background: #ffffff;
   position: fixed;
   width: 100%;
-	height: 52px;
+	height: 50px;
   z-index: 9999;
   top: 0;
 	box-sizing: border-box;
@@ -1207,7 +1207,7 @@ topのナビゲーション
   display: block;
 }
 
-@media screen and (max-width: 871px) {
+@media screen and (max-width: 770px) {
 	.header-title-wrap {
 		width: calc(100% - 130px);
 	}
@@ -1219,9 +1219,7 @@ topのナビゲーション
 	.header-title-wrap a {
     top: -2px;
 	}
-}
 
-@media screen and (max-width: 871px) {
 	.header-inner-top {
 		height: 70px;
 	}
@@ -1340,7 +1338,7 @@ topのナビゲーション
 }
 
 /* 以降ナビゲーションはトグルボタンに変わる */
-@media screen and (max-width: 871px) {
+@media screen and (max-width: 770px) {
 	.header-main-navigation-wrap {
 		padding-right: 0;
 	}
@@ -1356,6 +1354,10 @@ topのナビゲーション
 	.header-main-navigation,
 	.header-main-navigation-items-wrap {
 		display: none;
+	}
+
+	.header-main-navigation-items-wrap li a {
+		color: #ffffff;
 	}
 
   /* opened menue */
@@ -1412,7 +1414,7 @@ topのナビゲーション
 		text-transform: uppercase;
 		letter-spacing: 2.5px;
 		padding: 15px 55px 15px 30px;
-		color: #373735;
+		color: #ffffff;
 		font-size: 16px;
 		line-height: 10px;
 	}
@@ -1440,6 +1442,7 @@ topのナビゲーション
 		display: inline-block;
 		width: 100%;
 		text-align: left;
+		border: none;
 	}
 }
 
@@ -1448,15 +1451,11 @@ header ヘッダー
  */
 .header_main {
 	height: 500px;
-	padding: 90px 0 0;
-	position: relative;
+	padding-top: 50px;
 }
 
 .header_main_top_background {
-	position: absolute;
-	height: 60px;
 	width: 100%;
-	top: 52px;
 	background: #373735;
 	font-size: 20px;
 	color: #ffffff;
@@ -1466,6 +1465,23 @@ header ヘッダー
 	border-top: solid 1px #ff2a36;
 }
 
+@media screen and (max-width: 770px) {
+	.header_main {
+		height: 390px;
+		padding-top: 70px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header_main {
+		height: 381px;
+	}
+	.header_main_top_background {
+		font-size: 15px;
+		letter-spacing: 10px;
+	}
+}
+
 .glide_wrapper {
 	position: relative;
 }
@@ -1473,9 +1489,9 @@ header ヘッダー
 .glide_wrapper:before {
 	content: '';
 	position: absolute;
-	height: 310px;
+	height: 330px;
 	width: 100%;
-	top: 20px;
+	top: 0px;
 	background: #373735;
 }
 
@@ -1553,6 +1569,7 @@ header ヘッダー
 	height: 100%;
 	box-shadow: 3px 1px 8px 1px #373735;
 	z-index: 10;
+	object-fit: cover;
 }
 
 .glide_wrapper .glide__slide--active .glide__slide_desc--left {
@@ -1577,19 +1594,32 @@ header ヘッダー
 	opacity: 0.7;
 }
 
-.glide_wrapper .glide__slide--active:after {
-	display: none;
-	background: none;
-	border: solid 4px red;
-	border-radius: 50%;
-	content: '';
-	position: absolute;
-	bottom: 50px;
-  left: -10%;
-  width: 120%;
-  height: 40px;
-  padding: 6px 13px;
-	z-index: -1;
+@media screen and (max-width: 770px) {
+	.glide_wrapper li {
+		opacity: 1;
+		margin-top: 0;
+	}
+
+	.glide_wrapper:before {
+		display: none;
+	}
+
+	.glide_wrapper .glide__slide--active {
+		height: 280px !important;
+		margin: 0;
+	}
+
+	.glide_wrapper .glide__slide--active img {
+		box-shadow: none;
+	}
+
+	.glide_wrapper .glide__slide--active .glide__slide_desc--left {
+		left: 0;
+	}
+
+	.glide_wrapper .glide__slide--active .glide__slide_desc--right {
+		display: none;
+	}
 }
 
 /*
@@ -1678,6 +1708,20 @@ contents
 	float: left;
 }
 
+@media screen and (max-width: 770px) {
+	.keyword_block_wrapper {
+		padding: 5px;
+	}
+
+	.keyword_block_wrapper ul {
+		padding: 0;
+	}
+
+	.keyword_block_title {
+		display: none;
+	}
+}
+
 /*
 portfolio
  */
@@ -1727,6 +1771,12 @@ portfolio
 .portfolio_wrapper li:hover img {
 	transform: scale(1.1);
 	transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 770px) {
+	.portfolio_wrapper {
+		display: none;
+	}
 }
 
 /*
@@ -1844,24 +1894,24 @@ sidebar
 
 .sidebar_item_title {
 	background: #373735;
-	height: 50px;
+	height: 40px;
 	margin: 0 auto;
 	border-bottom: solid 2px #ff2a36;
 	border-radius: 5px;
-	padding: 3px 10px;
+	padding: 3px 30px;
 }
 
 .sidebar_item_title span {
 	margin: 0;
-	font-size: 25px;
+	font-size: 20px;
 	color: #ffffff;
 }
 
 .sidebar_item_title_crown span {
-	background-image: url("../images/crown.png");
-	background-size: 40px 40px;
+	background-image: url("./images/crown.png");
+	background-size: 36px 26px;
 	background-repeat: no-repeat;
-	padding: 5px 0 0 50px;
+	padding: 4px 0 5px 45px;
 }
 
 @media screen and (max-width: 1260px) {
@@ -1870,12 +1920,12 @@ sidebar
 	}
 }
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 770px) {
 	.sidebar-wrap {
-		width: 560px;
+		width: 100%;
+		padding: 0 10% 40px;
 	}
 }
-
 /**
 * 人気記事
 */
@@ -2071,6 +2121,12 @@ sidebar-moire
 
 .sidebar_moire_org_button:hover a {
   color: #ffffff;
+}
+
+@media screen and (max-width: 770px) {
+	.sidebar_moire_logo {
+		height: 110px;;
+	}
 }
 
 /*

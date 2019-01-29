@@ -1,6 +1,20 @@
 .content_wrapper {
 	width: calc(100% - 150px);
 	margin-left: 150px;
+	overflow: auto;
+}
+
+@media screen and (max-width: 960px) {
+	.content_wrapper {
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.content_wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 
 .left-content {
@@ -15,9 +29,9 @@
 	}
 }
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 770px) {
 	.left-content {
-		width: 560px;
+		width: 100%;
 	}
 }
 
@@ -31,6 +45,12 @@
 @media screen and (max-width: 1260px) {
 	.main-content {
 		padding: 0 10px 0 20px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.main-content {
+		padding: 0 10px;
 	}
 }
 
@@ -107,6 +127,12 @@ Content > Item
 	height: 100%;
 	top: 0;
 	left: 0;
+}
+
+@media screen and (max-width: 524px) {
+	.front-post {
+		width: 100%;
+	}
 }
 
 /*

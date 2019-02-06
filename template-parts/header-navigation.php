@@ -25,8 +25,8 @@
           </a>
         </li>
         <li>
-          <a href="/category/article/">
-            Non Money Action
+          <a>
+            記事一覧
           </a>
           <div class="header-main-navigation-child">
             <ul>
@@ -89,7 +89,7 @@
           <div class="header-main-navigation-child">
             <ul>
               <li>
-                <a href="about-us">
+                <a href="/about-us">
                   ノンマネとは
                 </a>
               </li>

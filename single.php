@@ -7,6 +7,10 @@ get_header();
 ?>
 
 	<div id="content" class="post-content">
+  	<div class="breadcrumb-wrap">
+      <?php breadcrumb(); ?>
+    </div>
+
 		<div class="content-wrap">
 			<div id="primary" class="single-content-area">
 				<main id="main" role="main">

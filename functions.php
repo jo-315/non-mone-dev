@@ -112,11 +112,9 @@ add_action( 'wp_enqueue_scripts', 'moire_scripts' );
 // header画像の追加
 add_action( 'wp_enqueue_scripts', 'add_header_image' );
 
-
 /*
 ### Archeive ### ---------------------------------------------------------------
 */
-
 // 投稿一覧で投稿日時を表示
 function moire_posted_date() {
 	// $time_string = formatの決定

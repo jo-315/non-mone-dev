@@ -1,18 +1,16 @@
 /*
 single
- */
- /*
- Content
- */
+*/
+/*
+Content
+*/
 .main_content_wrapper {
   display: flex;
-  overflow: unset !important;
 }
 
 .post-content {
  background: #ffffff;
  width: calc(100% - 450px);
- margin-left: calc(150px + 1%);
 }
 
 @media screen and (max-width: 1158px) {
@@ -27,9 +25,19 @@ single
   }
 }
 
+@media screen and (max-width: 996px) {
+  .main_content_wrapper {
+    display: block;
+  }
+
+  .post-content {
+    width: calc(100% - 150px - 2%);
+  }
+}
+
 .single-content-area {
  width: 650px;
- margin: 60px auto;
+ margin: 60px auto 0;
 }
 
 .single-content {
@@ -226,6 +234,12 @@ single
    padding: 0;
  }
 
+ @media screen and (max-width: 770px) {
+  .related-post-content {
+    overflow: auto;
+  }
+ }
+
  @media screen and (max-width: 650px) {
    .related-post-item-wrap {
      width: calc((100% - 30px)/2);
@@ -276,6 +290,15 @@ single
   @media screen and (max-width: 1158px) {
     .sidebar-single-wrap {
       width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 996px) {
+    .sidebar-single-wrap {
+      overflow: auto;
+      width: 100%;
+      padding-left: calc(150px + 30px);
+      padding-right: 30px;
     }
   }
 
@@ -474,6 +497,22 @@ single
 
   .sidebar_moire_org_button:hover a {
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 1158px) {
+    .sidebar_moire_logo {
+      float: unset;
+      margin: 0 auto 5px;
+    }
+
+    .sidebar_moire_desc {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .sidebar_item_wrapper {
+      margin-top: 20px;
+    }
   }
 
   /*

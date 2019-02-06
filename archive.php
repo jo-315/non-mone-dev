@@ -6,6 +6,10 @@ get_header();
 ?>
 
   <div id="content" class="site-content post-content">
+    <div class="breadcrumb-wrap">
+      <?php breadcrumb(); ?>
+    </div>
+
     <div class="archive-content-wrap">
 
 			<div id="primary">

@@ -38,24 +38,3 @@ jQuery(function($) {
     }, 500);
   });
 });
-
-// portfolio
-jQuery(function($){
-  var fix    = $(".portfolio_wrapper");
-  if (fix.length !== 0) {
-    var fixTop = fix.offset().top;
-    $(window).scroll(function () {
-      if($(window).scrollTop() >= fixTop - 50) {
-        fix.css({
-          "position": "fixed",
-          "top": 52
-        });
-      } else {
-        fix.css({
-          "position": "absolute",
-          "top": 0
-        });
-      }
-    });
-  }
-});

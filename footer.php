@@ -1,10 +1,85 @@
-  </div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-inner">
 			<div class="footer_navigation">
-				navi
+				<div class="footer_nav_column">
+				  <span class="footer_nav_column_title">記事一覧</span>
+					<ul>
+					  <li>
+							<a href="/category/international-cooperation/">
+								国際協力
+							</a>
+						</li>
+						<li>
+							<a href="/category/nature-conservation">
+								自然保護
+							</a>
+						</li>
+						<li>
+							<a href="/category/regional-vitalization">
+								地域活性
+							</a>
+						</li>
+						<li>
+							<a href="/category/study-abroad">
+								留学
+							</a>
+						</li>
+						<li>
+							<a href="/category/intern">
+								インターン
+							</a>
+						</li>
+						<li>
+							<a href="/category/other">
+								その他
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_nav_column">
+				  <span class="footer_nav_column_title">記事募集</span>
+					<ul>
+						<li>
+							<a href="/recruit">
+								ライター募集
+							</a>
+						</li>
+						<li>
+							<a href="/article_contribution">
+								寄稿の募集
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_nav_column">
+				  <span class="footer_nav_column_title">ノンマネ</span>
+					<ul>
+              <li>
+                <a href="/about-us">
+                  ノンマネとは
+                </a>
+              </li>
+              <li>
+                <a href="https://moire-org.com/" target="_blank">
+                  運営団体
+                </a>
+              </li>
+              <li>
+                <a href="/member">
+                  ライター一覧
+                </a>
+              </li>
+              <li>
+                <a href="/contributer">
+                  寄稿者一覧
+                </a>
+              </li>
+            </ul>
+				</div>
 			</div>
+
 			<div class="footer-moire-wrap">
 				<div class="footer-moire-img">
 					<img

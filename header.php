@@ -8,6 +8,11 @@
   <?php if (is_single()) { ?>
     <link rel="preload" href=<?php echo get_template_directory_uri() . '/css/single.css' ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/single.css' ?>></noscript>
+  <?php } elseif(is_home()) { ?>
+    <link rel="preload" href=<?php echo get_template_directory_uri() . '/css/front.css' ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/front.css' ?>></noscript>
+    <link rel="preload" href=<?php echo get_template_directory_uri() . '/css/index.css' ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/index.css' ?>></noscript>
   <?php } else { ?>
     <link rel="preload" href=<?php echo get_template_directory_uri() . '/css/index.css' ?> as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/index.css' ?>></noscript>
@@ -120,7 +125,8 @@
   
     new Glide('.header_glide', {
       type: 'carousel',
-      startAt: Math.floor( Math.random() * 5 ),
+      startAt: 1,
+      // startAt: Math.floor( Math.random() * 5 ),
       perView,
       focusAt,
       autoplay: 200000
@@ -128,12 +134,7 @@
   </script>
 
 	<div class="site-content">
-    <?php
-      if (is_front_page() || is_single()) {get_template_part( 'template-parts/content', 'portfolio' );};
-    ?>
-
-    <div class="breadcrumb-wrap">
-      <?php breadcrumb(); ?>
-    </div>
-
     <div class="main_content_wrapper">
+      <?php
+        if (is_front_page() || is_single()) {get_template_part( 'template-parts/content', 'portfolio' );};
+      ?>

@@ -1,0 +1,10 @@
+.sidebar_moire_desc {
+	float: left;
+	width: calc(100% - 110px);
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.main_content_wrapper {
+	display: flex;
+}

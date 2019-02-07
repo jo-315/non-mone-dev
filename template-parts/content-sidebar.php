@@ -121,7 +121,7 @@
   <!-- キーワード -->
   <div class="sidebar_item_wrapper">
     <div class="sidebar_item_title">
-      <span>一押しキーワード</span>
+      <span>おすすめワード</span>
     </div>
 
     <div class="sidebar_keyword_wrapper">

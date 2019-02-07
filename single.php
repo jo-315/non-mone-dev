@@ -66,7 +66,7 @@ get_header();
 							    array_push($category_ID,$category->cat_ID);
 							}
 
-							$posts_number = 4; // 表示したい件数を指定
+							$posts_number = 6; // 表示したい件数を指定
 
 							$args = array(
 							    'post__not_in'=>array($post->ID), // 現在のページの投稿を除外

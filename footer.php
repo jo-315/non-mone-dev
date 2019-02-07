@@ -1,5 +1,13 @@
 	</div>
 
+	<?php
+		wp_reset_query();
+		if (is_front_page() || is_single()) {
+			set_query_var( 'part', 'footer' );
+			get_template_part( 'template-parts/content', 'portfolio' );
+		};
+	?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-inner">
 			<div class="footer_navigation">

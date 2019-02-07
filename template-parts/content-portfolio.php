@@ -1,4 +1,5 @@
-<div class="portfolio_wrapper">
+<?php $part = get_query_var('part'); ?>
+<div class="portfolio_wrapper portfolio_wrapper__<?php echo($part); ?>">
   <p>
     portfolio
   </p>
@@ -45,5 +46,4 @@
       </a>
     </li>
   </ul>
-
 </div>

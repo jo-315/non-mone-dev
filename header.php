@@ -136,5 +136,8 @@
 	<div class="site-content">
     <div class="main_content_wrapper">
       <?php
-        if (is_front_page() || is_single()) {get_template_part( 'template-parts/content', 'portfolio' );};
+        if (is_front_page() || is_single()) {
+          set_query_var( 'part', 'header' );
+          get_template_part( 'template-parts/content', 'portfolio' );
+        };
       ?>

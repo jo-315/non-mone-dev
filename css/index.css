@@ -3,9 +3,9 @@
 	overflow: auto;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 996px) {
 	.content_wrapper {
-		width: 960px;
+		width: 996px;
 	}
 }
 
@@ -238,7 +238,7 @@ arthive
 	}
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 930px) {
 	.archive_main {
 		width: 100%;
 	}	

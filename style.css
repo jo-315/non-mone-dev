@@ -1303,13 +1303,17 @@ topのナビゲーション
 	position: absolute;
 	background: #ffffff;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	transition: all .2s;
+	border-top: solid 2px #ffffff;
+	border-right: solid 1px #ff2a36;
+	border-left: solid 1px #ff2a36;
 	border-bottom: solid 2px #ff2a36;
+	top: 49px;
 }
 
 .header-main-navigation-big-child {
-	width: 150px;
+	width: 130px;
 }
 
 .header-main-navigation-child ul{
@@ -2420,6 +2424,9 @@ footer
    padding: 20px 10px;
  }
 
+ .page_content_block h2{
+ }
+
  .page_content--text h4 {
    border-bottom: solid 2px #D0324B;
 	 font-size: 18px;
@@ -2445,7 +2452,7 @@ footer
  }
 
  .about_content_block--img {
-	 width: 401px;
+	 width: 300px;
  }
 
  .about_content_wrap {
@@ -2453,34 +2460,6 @@ footer
 	 margin-bottom: 100px;
  }
 
- .about_content_wrap_imgs {
-	 overflow: auto;
-	 margin-top: 20px;
- }
-
- .about_content_wrap_imgs img {
-	 object-fit: cover;
-	 width: 100%;
-	 padding: 2px 4px;
- }
-
- .about_content_wrap_imgs--left,
- .about_content_wrap_imgs--right {
-	 float: left;
-	 width: 50%;
- }
-
- .about_content_wrap_imgs--left img {
-	 height: 99%;
- }
-
- .about_content_wrap_imgs--right img:nth-child(1) {
-	 height: 120px;
- }
-
- .about_content_wrap_imgs--right img:nth-child(2) {
-	 height: 280px;
- }
 
  /* Recruit */
  .recruit_title {
@@ -2530,7 +2509,7 @@ footer
    font-weight: bold;
    width: 200px;
 	 margin: 0 auto;
-   border-bottom: solid #2fcbb2;
+   border-bottom: solid #D0324B;
  }
 
  .recruit_detail li:nth-child(even) {
@@ -2582,7 +2561,7 @@ footer
 }
 
  .contributer_content {
-	border-bottom: solid 0.5px #ff2a36;
+	border-top: solid 0.5px #ff2a36;
  }
 
  .member_img {

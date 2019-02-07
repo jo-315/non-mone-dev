@@ -3,6 +3,9 @@ get_header();
 ?>
 
 <div class="page_content_block">
+  <h2>
+    寄稿者一覧
+  </h2>
   <div class="member_content_wrap">
     <div class="member_content contributer_content">
       <div class="profile_text_title">

@@ -28,7 +28,7 @@
           <a>
             記事一覧
           </a>
-          <div class="header-main-navigation-child">
+          <div class="header-main-navigation-child header-main-navigation-big-child">
             <ul>
               <li>
                 <a href="/category/international-cooperation/">
@@ -86,7 +86,7 @@
           <a>
             ノンマネとは
           </a>
-          <div class="header-main-navigation-child">
+          <div class="header-main-navigation-child header-main-navigation-big-child">
             <ul>
               <li>
                 <a href="/about-us">

@@ -10,10 +10,13 @@ get_header('member');
 ?>
 
 <div class="page_content_block">
+  <h2>
+    メンバー一覧
+  </h2>
   <div class="member_content_wrap">
     <div class="member_content">
       <div class="profile_text_title">
-        <span>代表　　見城 俊介</span>
+        <span>moire代表　　見城 俊介</span>
       </div>
 
       <div class="member_img">
@@ -49,62 +52,7 @@ get_header('member');
 
     <div class="member_content">
       <div class="profile_text_title">
-        <span>運営メンバー　　野垣 秀天</span>
-      </div>
-
-      <div class="member_img">
-        <img
-          src="https://moire.xsrv.jp/wp-content/uploads/profile/profile_hide.png"
-          class="profile_img"
-        />
-      </div>
-
-      <div class="profile_text">
-        <div class="profile_text_content">
-          学生団体ASANTE PROJECT 大阪支部代表 / ALL ABOUT AFRICA 編集担当</br>
-          「自分の目でリアルなアフリカを見て、多くの人にリアルな情報を届ける」がモットー。
-          アフリカ大好きな大学2回生です！
-        </div>
-        <div class="profile_text_content-button-wrap">
-          <a
-            href="https://twitter.com/hideten7011?lang=ja"
-            target="_blank"
-            class="sns-social-wrap profile-sns-social-wrap "
-          >
-            <img
-              src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
-              alt="Twitter"
-              class="profile-sns-social-icon"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="member_content">
-      <div class="profile_text_title">
-        <span>運営メンバー　　はる</span>
-      </div>
-
-      <div class="member_img">
-        <img
-          src="https://moire.xsrv.jp/wp-content/uploads/profile/profile_haru.png"
-          class="profile_img"
-        />
-      </div>
-
-      <div class="profile_text">
-        <div class="profile_text_content">
-          NICEで複数回ボランティア経験あり。普段はたまにバスケしている大学2回生。只今絶賛自分探し中で、大学生のうちに海外に出て楽しいことしたいと思ったり...
-        </div>
-        <div class="profile_text_content-button-wrap">
-        </div>
-      </div>
-    </div>
-
-    <div class="member_content">
-      <div class="profile_text_title">
-        <span>運営メンバー　　神田 勇太 (よんて)</span>
+        <span>moire運営メンバー　　神田 勇太 (よんて)</span>
       </div>
 
       <div class="member_img">
@@ -235,31 +183,6 @@ get_header('member');
               class="profile-sns-social-icon"
             />
           </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="member_content">
-      <div class="profile_text_title">
-        <span>デザイナー　　じゅき</span>
-      </div>
-
-      <div class="member_img">
-        <img
-          src="https://moire.xsrv.jp/wp-content/uploads/profile/profile_zyuki.png"
-          class="profile_img"
-        />
-      </div>
-
-      <div class="profile_text">
-        <div class="profile_text_content">
-          ロゴとかアイキャッチ作りのお手伝い</br>
-          基礎心理学とか認知心理学を勉強中</br>
-          カラオケの十八番はキミシダイ列車</br>
-          ハワイにいきたいが最近の口癖
-        </div>
-
-        <div class="profile_text_content-button-wrap">
         </div>
       </div>
     </div>

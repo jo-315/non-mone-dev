@@ -23,44 +23,27 @@ get_header('about-us');
         <h3>ノンマネとは</h3>
       </div>
       <div class="about_content_wrap">
-        ノンマネは『お金を超える価値の発掘』をテーマに、「お金以外を目的」とした「何かしらの活動」を発信するWebメディアです。
-        <div class="about_content_wrap_imgs">
-          <div class="about_content_wrap_imgs--left">
-            <img
-              src="http://moire.xsrv.jp/wp-content/uploads/2018/12/48199.jpg"
-              alt="英語キャンプ"
-            />
-          </div>
-          <div class="about_content_wrap_imgs--right">
-            <img
-              src="http://moire.xsrv.jp/wp-content/uploads/2018/12/234083.jpg"
-              alt="自然保護"
-            />
-            <img
-              src="http://moire.xsrv.jp/wp-content/uploads/2018/12/image19.jpeg"
-              alt="子どもたちと"
-            />
-          </div>
-        </div>
+        私たちは、「お金ではない価値を持ち、それでいてただの娯楽ではない活動」をノンマネと呼んでいます。
       </div>
 
       <div class="about_content_block--title">
         <h3>ミッション</h3>
       </div>
       <div class="about_content_wrap">
-        ノンマネのミッションは、今まで社会貢献活動に関心のなかった人たちに関心を持ってもらうという、難関な課題に立ち向かうことです。</br>
-        </br>
-        その解決のために、社会貢献活動に興味のない人に、社会貢献活動以外の記事を目的にノンマネに来てもらい、そのついでに社会貢献活動の記事をチラッとでもいいから読んでもらう。
-        そしてその記事を読むことで、社会貢献活動に少しでも興味を持ってもらう。</br>
-        </br>
-        この流れを作ることで僕たちは困難な課題に立ち向かっていきます！
+        Webメディア・ノンマネは、「ノンマネという活動にもっと多くの人が関わる世の中を作ること」を目的としています。<br>
+        <br>
+        今の世の中は、遊びでもなくお金になるわけでもない活動に関わっていると、「お金をもらえないのに何故やるの？」と多くの人に言われます。でも、こういった活動に関わるのは、お金ではない価値や面白さを感じているからです。
+        世の中に「お金にはならないけど別の価値があるからやる」という発想が広がり、人々がノンマネを行えば世の中はもっと面白くなるに違いありません。
+        それに、ノンマネにはボランティアなども含まれているので、世の中もちょっとだけよくなっていくかもしれません。<br>
+        <br>
+        ノンマネはそんな世の中を目指し、Webメディアとしてノンマネを行う人たちの活動を発信していきます。
       </div>
 
       <div class="about_content_block--title">
-        <h3>運営体制</h3>
+        <h3>運営</h3>
       </div>
       <div class="about_content_wrap">
-        このHPは<a href="https://moire-org.com/" target="_blank">moire 社会貢献活動に繋ぐWebメディア</a>によって運営されています。
+        このHPは<a href="https://moire-org.com/" target="_blank">moire ~社会貢献活動に繋ぐWebメディア~</a>によって運営されています。
       </div>
     </div>
   </div>

@@ -79,7 +79,7 @@
       </div>
 
       <div class="sidebar_moire_desc">
-        moire（モアレ）</br>
+        <h5>moire（モアレ）</h5>
         社会貢献活動に繋ぐWebメディア
 
         <div class="sidebar_moire_sns">

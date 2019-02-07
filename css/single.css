@@ -87,6 +87,7 @@ Content
    .single-content-area {
      width: 100%;
      padding: 0 20px;
+     margin: 20px auto 0;
    }
  }
 
@@ -356,32 +357,6 @@ Content
     border-bottom: solid 1px #cccccc;
   }
 
-  .popular_article_count {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .popular_article_count-1 {
-    background: #E6B422;
-  }
-
-  .popular_article_count-2 {
-    background: #C0C0C0;
-  }
-
-  .popular_article_count-3 {
-    background: #8C4841;
-  }
-
   .popular_article_img img {
     height: 150px;
     width: 100%;
@@ -421,10 +396,6 @@ Content
   }
 
   @media screen and (max-width: 800px) {
-    .popular_article_count {
-      left: 0;
-    }
-
     .popular_article-column {
       padding: 0px 0px 20px !important;
       margin-bottom: 40px !important;
@@ -518,6 +489,39 @@ Content
 
     .sidebar_item_wrapper {
       margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 846px) {
+    .sidebar-moire-wrap {
+      width: 340px;
+      margin: 15px auto 0;
+    }
+
+    .sidebar_moire_logo{
+      float: left;
+      margin: 0 10px 5px;
+    }
+
+    .sidebar_moire_desc {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .sidebar-moire-wrap {
+      width: 100%;
+      margin: 5px auto 0;
+    }
+
+    .sidebar_moire_logo{
+      width: 60px;
+      height: 60px;
+      margin: 20px 15px 5px 20px;
+    }
+
+    .sidebar_moire_desc {
+      width: 175px;
     }
   }
 

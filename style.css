@@ -1502,40 +1502,24 @@ header ヘッダー
 	font-size: 14px;
 }
 
-.glide__slide--1 img,
-.glide__slide--1 .glide__slide_desc--right,
-.glide__slide--4 img,
-.glide__slide--4 .glide__slide_desc--right {
-	border-bottom: solid 2px rgb(255, 143, 87);
+.glide__slide:nth-child(2n + 1) img,
+.glide__slide:nth-child(2n + 1) .glide__slide_desc--right {
+	border-bottom: solid 2px #91EAAF;
 }
 
-.glide__slide--1 .glide__slide_desc--left,
-.glide__slide--4 .glide__slide_desc--left {
-	border-bottom: solid 2px rgb(255, 143, 87);
-	background: rgb(255, 143, 87);
+.glide__slide:nth-child(2n + 1) .glide__slide_desc--left {
+	border-bottom: solid 2px #91EAAF;
+	background: #91EAAF;
 }
 
-.glide__slide--2 img,
-.glide__slide--2 .glide__slide_desc--right,
-.glide__slide--5 img,
-.glide__slide--5 .glide__slide_desc--right {
-	border-bottom: solid 2px rgb(75, 211, 154);
+.glide__slide:nth-child(2n) img,
+.glide__slide:nth-child(2n) .glide__slide_desc--right {
+	border-bottom: solid 2px #EA1233;
 }
 
-.glide__slide--2 .glide__slide_desc--left,
-.glide__slide--5 .glide__slide_desc--left {
-	border-bottom: solid 2px rgb(75, 211, 154);
-	background: rgb(75, 211, 154);
-}
-
-.glide__slide--3 img,
-.glide__slide--3 .glide__slide_desc--right {
-	border-bottom: solid 2px rgb(60, 156, 211);
-}
-
-.glide__slide--3 .glide__slide_desc--left {
-	border-bottom: solid 2px rgb(60, 156, 211);
-	background: rgb(60, 156, 211);
+.glide__slide:nth-child(2n) .glide__slide_desc--left {
+	border-bottom: solid 2px #EA1233;
+	background: #EA1233;
 }
 
 .glide_wrapper img {

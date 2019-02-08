@@ -233,19 +233,9 @@ function moire_post_thumbnail($head = false) {
 		$class = 'head_thumbnail';
 	}
 
-	if ( has_post_thumbnail() ) {
-		echo '<div class="post-thumbnail-wrap ' . $class . '">';
-		the_post_thumbnail();
-		echo '</div>';
-	} else {
-		$post_image_link           = moire_catch_that_image();
-		$zillah_image_as_thumbnail = get_theme_mod( 'zillah_image_as_thumbnail', false );
-		if ( $post_image_link && $zillah_image_as_thumbnail ) {
-			echo '<div class="post-thumbnail-wrap">';
-			echo '<img width="1170" height="545" src="' . esc_attr( $post_image_link ) . '" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="' . esc_attr( get_the_title() ) . '">';
-			echo '</div>';
-		}
-	}
+	echo '<div class="post-thumbnail-wrap ' . $class . '">';
+	the_post_thumbnail();
+	echo '</div>';
 }
 
 /**

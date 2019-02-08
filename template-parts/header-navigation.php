@@ -5,7 +5,8 @@
   <div class="header-logo-wrap">
     <a href="/">
       <img
-        src="<?php echo get_stylesheet_directory_uri(); ?>/images/non_mone_logo.png"
+        data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/non_mone_logo.png"
+        class="lazyload"
       >
     </a>
   </div>
@@ -36,27 +37,27 @@
                 </a>
               </li>
               <li>
-                <a href="/category/nature-conservation">
+                <a href="/category/nature-conservation/">
                   自然保護
                 </a>
               </li>
               <li>
-                <a href="/category/regional-vitalization">
+                <a href="/category/regional-vitalization/">
                   地域活性
                 </a>
               </li>
               <li>
-                <a href="/category/study-abroad">
+                <a href="/category/study-abroad/">
                   留学
                 </a>
               </li>
               <li>
-                <a href="/category/intern">
+                <a href="/category/intern/">
                   インターン
                 </a>
               </li>
               <li>
-                <a href="/category/other">
+                <a href="/category/other/">
                   その他
                 </a>
               </li>

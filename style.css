@@ -1440,6 +1440,14 @@ topのナビゲーション
 		text-align: left;
 		border: none;
 	}
+
+	.header-main-navigation-items-wrap li:hover a {
+		color: #ffffff;
+	}
+
+	.header-main-navigation-items-wrap li:hover .header-main-navigation-child li a {
+		color: #ffffff;
+	}
 }
 
 /*
@@ -1633,21 +1641,26 @@ contents
 
 /* keyword-block */
 .keyword_block_wrapper {
-	height: 60px;
 	width: 100%;
 	position: relative;
 	background: #373735;
 	color: #ddd;
-	padding: 5px 30px;
+	padding: 5px 0 0;
 }
 
 .keyword_block_wrapper ul {
-	float: left;
+	display: inline-block;
 	margin: 0;
+	padding-left: 15px;
+	width: calc(100% - 120px - 10px);
+	vertical-align: middle;
 }
 
 .keyword_block_wrapper li {
 	list-style: none;
+	display: inline-block;
+	margin: 5px 50px 5px 0;
+
 }
 
 .keyword_block_wrapper li div {
@@ -1664,6 +1677,7 @@ contents
 
 .keyword_block_wrapper img {
 	object-fit: cover;
+	height: 100%;
 }
 
 .keyword_block_wrapper h5 {
@@ -1686,7 +1700,18 @@ contents
 	color: #cecece;
 	font-size: 20px;
 	font-family: serif;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	margin: 5px 20px 0;
+	width: 80px;
+}
+
+@media screen and (max-width: 800px) {
+	.keyword_block_wrapper ul {
+		white-space: nowrap;
+		overflow-x: auto;
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -1700,6 +1725,11 @@ contents
 
 	.keyword_block_title {
 		display: none;
+	}
+
+	.keyword_block_wrapper ul{
+		width: 100%;
+		padding-left: 20px;
 	}
 }
 
@@ -1760,6 +1790,7 @@ portfolio
 
 .portfolio_wrapper__header li {
 	margin-bottom: 5px;
+	box-shadow: 1px 1px 5px -3px;
 }
 
 .portfolio_wrapper__header div {
@@ -1785,6 +1816,7 @@ portfolio
 .portfolio_wrapper__footer li {
 	margin-bottom: 5px;
 	display: inline-block;
+	box-shadow: 3px 3px 10px -3px;
 }
 
 .portfolio_wrapper__footer div {
@@ -2213,13 +2245,35 @@ sidebar-keyword
 	padding: 5px 10px;
 }
 
+.sidebar_keyword_wrapper li:hover {
+	opacity: 0.6;
+}
+
 .sidebar_keyword_wrapper a {
 	text-decoration: none;
 	color: #373735;
 	font-size: 16px;
 }
- 
 
+.sidebar_keyword_wrapper p {
+	width: 80%;
+	display: inline-block;
+	margin: 0 0 0 2%;
+}
+
+@media screen and (max-width: 846px) {
+	.sidebar_keyword_wrapper li {
+		width: 50%;
+		float: left;
+	}
+}
+ 
+@media screen and (max-width: 435px) {
+	.sidebar_keyword_wrapper li {
+		width: 100%;
+	}
+}
+ 
 /*
 footer
  */

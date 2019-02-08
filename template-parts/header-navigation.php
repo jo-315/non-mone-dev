@@ -42,8 +42,8 @@
                 </a>
               </li>
               <li>
-                <a href="/category/regional-vitalization/">
-                  地域活性
+                <a href="/category/regional-action/">
+                  地域の活動
                 </a>
               </li>
               <li>

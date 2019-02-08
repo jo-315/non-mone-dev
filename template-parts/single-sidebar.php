@@ -9,7 +9,8 @@
     <div class="sidebar-moire-wrap">
       <div class="sidebar_moire_logo">
         <img
-          src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
+          data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
+          class="lazyload"
         >
       </div>
 
@@ -24,9 +25,9 @@
             class="sns-social-wrap"
           >
             <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/Twitter_Social_Icon_Rounded_Square_Color.png"
+              data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/Twitter_Social_Icon_Rounded_Square_Color.png"
               alt="Twitter"
-              class="sns-social-icon"
+              class="sns-social-icon lazyload"
             />
           </a>
 
@@ -36,9 +37,9 @@
             class="sns-social-wrap"
           >
             <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/f-ogo_RGB_HEX-100.svg"
+              data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/f-ogo_RGB_HEX-100.svg"
               alt="Facebook"
-              class="sns-social-icon"
+              class="sns-social-icon lazyload"
             />
           </a>
 

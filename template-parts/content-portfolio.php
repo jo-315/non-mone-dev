@@ -9,8 +9,9 @@
       <a href="#">
         <div>
           <img
-            src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
+            data-src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
             alt="海外"
+            class="lazyload"
           />
         </div>
       </a>
@@ -19,8 +20,9 @@
       <a href="#">
         <div>
           <img
-            src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg"
+            data-src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg"
             alt="海外"
+            class="lazyload"
           />
         </div>
       </a>
@@ -29,8 +31,9 @@
       <a href="#">
         <div>
           <img
-            src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
+            data-src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
             alt="海外"
+            class="lazyload"
           />
         </div>
       </a>
@@ -39,8 +42,9 @@
       <a href="#">
         <div>
           <img
-            src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg"
+            data-src="http://nonmonedev.local/wp-content/uploads/2018/12/234083-1024x576.jpg"
             alt="海外"
+            class="lazyload"
           />
         </div>
       </a>

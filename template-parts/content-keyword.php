@@ -7,8 +7,9 @@
       <a href="#">
         <div>
           <img
-            src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
+            data-src="http://nonmonedev.local/wp-content/uploads/2018/12/image8.jpeg"
             alt="海外"
+            class="lazyload"
           />
         </div>
         <h5>海外</h5>

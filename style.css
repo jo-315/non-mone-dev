@@ -1575,7 +1575,10 @@ header ヘッダー
   bottom: 0;
   right: -300px;
   width: 300px;
-  padding: 0 0 0 20px;
+	padding: 0 0 0 20px;
+	font-size: 13px;
+	letter-spacing: 0.2px;
+	line-height: 20px;
 }
 
 .glide_wrapper .glide__slide--active:hover img {

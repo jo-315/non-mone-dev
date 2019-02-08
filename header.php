@@ -51,7 +51,7 @@
                     国際協力
                 </div>
                 <div class="glide__slide_desc glide__slide_desc--right">
-                  日本を始め、世界各地で活躍しているライターによる体験談
+                  日本を始め、世界各地で活躍しているライターによる活動記
                 </div>
               </li>
 
@@ -68,22 +68,6 @@
                 </div>
                 <div class="glide__slide_desc glide__slide_desc--right">
                   地域にはあなたの想像以上におもしろいこと・知らないことが溢れてる
-                </div>
-              </li>
-
-              <li class="glide__slide glide__slide--2">
-                <a href="/tag/overseas/">
-                  <img
-                    data-src="http://non-mone.com/wp-content/uploads/2018/11/IMG_0016.jpg"
-                    alt=""
-                    class="lazyload"
-                  >
-                </a>
-                <div class="glide__slide_desc glide__slide_desc--left">
-                    海外
-                </div>
-                <div class="glide__slide_desc glide__slide_desc--right">
-                  世界各地でのライターの活動を紹介。世界にはまだまだおもしろいことがある
                 </div>
               </li>
 
@@ -104,6 +88,22 @@
               </li>
 
               <li class="glide__slide glide__slide--2">
+                <a href="/tag/overseas/">
+                  <img
+                    data-src="http://non-mone.com/wp-content/uploads/2018/11/IMG_0016.jpg"
+                    alt=""
+                    class="lazyload"
+                  >
+                </a>
+                <div class="glide__slide_desc glide__slide_desc--left">
+                    海外
+                </div>
+                <div class="glide__slide_desc glide__slide_desc--right">
+                  世界各地でのライターの活動を紹介。世界にはまだまだおもしろいことがたくさんある
+                </div>
+              </li>
+
+              <li class="glide__slide glide__slide--2">
                 <a href="/category/study-abroad">
                   <img
                     data-src="http://non-mone.com/wp-content/uploads/2018/10/IMG_6404.jpg"
@@ -115,7 +115,7 @@
                     留学
                 </div>
                 <div class="glide__slide_desc glide__slide_desc--right">
-                  留学の日常や体験、そしてそれを通して感じたことや楽しかったこと
+                  留学の貴重な日常や体験、そして留学を通して感じたこと・楽しかったこと
                 </div>
               </li>
             </ul>

@@ -186,6 +186,53 @@ get_header();
         </div>
       </div>
     </div>
+
+    <div class="member_content">
+      <div class="profile_text_title">
+        <span>ライター　　あゆみ</span>
+      </div>
+
+      <div class="member_img">
+        <img
+          src="https://moire.xsrv.jp/wp-content/uploads/profile/profile_ayumi.png"
+          class="profile_img"
+        />
+      </div>
+
+      <div class="profile_text">
+        <div class="profile_text_content">
+        大学3年時に休学してNICEのぼらいやーに参加。
+        国際協力にはまり、国際NPOのテラ・ルネッサンスにてインターンとして活動中。
+        （スイーツと東南アジアをこよなく愛する大学生。）
+        </div>
+
+        <div class="profile_text_content-button-wrap">
+          <a href='/author/ayumi' class="profile_text_content-button">記事一覧</a>
+          <a
+            href="https://twitter.com/ayumi_0311"
+            target="_blank"
+            class="sns-social-wrap profile-sns-social-wrap "
+          >
+            <img
+              src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
+              alt="Twitter"
+              class="profile-sns-social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/1030ayumi0311/?hl=ja"
+            target="_blank"
+            class="sns-social-wrap profile-sns-social-wrap "
+          >
+            <img
+              src="https://moire.xsrv.jp/wp-content/uploads/IG_Glyph_Fill.psd-8.png"
+              alt="instagram"
+              class="profile-sns-social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

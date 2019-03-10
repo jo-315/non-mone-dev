@@ -331,3 +331,64 @@ function breadcrumb(){
 
  echo $str;
 }
+
+//アクセス数をカウントする
+function set_post_views() {
+	$postID = get_the_ID();
+	$num = (int)date_i18n('H'); // 現在時間で番号取得
+	$key = 'pv_count';
+	$count_key = '_pv_count';
+	$count_array = get_post_meta( $postID, $count_key, true );
+	$sum_count = get_post_meta( $postID, $key, true );
+	if( !is_array($count_array) ) { //配列ではない
+		$count_array = array();
+		$count_array[$num] = 1;
+	} else { //配列である
+		if ( isset( $count_array[$num] ) ) { //カウント配列[n]が存在する
+			$count_array[$num] += 1;
+		} else { //カウント配列[n]が存在しない
+			$count_array[$num] = 1;
+		}
+	}
+	//アクセス数を更新する
+	update_post_meta( $postID, $count_key, $count_array );
+	update_post_meta( $postID, $key, $sum_count + 1 );
+}
+
+//アクセス数をリセットする
+function reset_post_views() {
+	$num = (int)date_i18n('H');
+	$key = 'pv_count';
+	$reset_key = '_pv_count';
+	$args = array(
+		'posts_per_page'   => -1,
+		'post_type' => 'post',
+		'post_status'=>'publish',
+		'meta_key' => $reset_key,
+	);
+	$reset_posts = get_posts($args);
+	if($reset_posts):
+		foreach($reset_posts as $reset_post):
+			$postID = $reset_post->ID;
+			$count_array = get_post_meta( $postID , $reset_key, true );
+			if ( isset( $count_array[$num] ) ) { //カウント配列[n]が存在する
+				$count_array[$num] = 0;
+			}
+			//アクセス数をリセットする
+			update_post_meta( $postID, $reset_key, $count_array );
+			update_post_meta( $postID, $key, array_sum( $count_array ) );
+		endforeach;
+	endif;
+}
+
+//リセット関数を実行するアクションフックを追加
+add_action( 'set_two_day_event', 'reset_post_views' );
+
+//アクションフックを定期的に実行するスケジュールイベントの追加
+function my_activation() {
+	if ( ! wp_next_scheduled( 'set_two_day_event' ) ) {
+    wp_schedule_event( time(), 'twicedaily', 'set_two_day_event' );
+	}
+}
+
+add_action('wp', 'my_activation');

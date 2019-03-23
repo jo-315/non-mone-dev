@@ -214,7 +214,7 @@ if ( ! function_exists( 'moire_theme_single_posted' ) ) :
 			);
 		};
 
-		echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><img src="'. $path .'"><span class="byline"> ' . $byline . '</span></a>'; // WPCS: XSS OK.
+		echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><img src="'. $path .'" class="single-author-img-top"><span class="byline"> ' . $byline . '</span></a>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -382,13 +382,83 @@ function reset_post_views() {
 }
 
 //リセット関数を実行するアクションフックを追加
-add_action( 'set_two_day_event', 'reset_post_views' );
+add_action( 'set_hours_event', 'reset_post_views' );
+
+//実行間隔の追加
+function my_interval( $schedules ) {
+	// 1時間ごとを追加
+	$schedules['1hours'] = array(
+		'interval' => 3600,
+		'display' => 'every 1 hours'
+	);
+	return $schedules;
+}
+add_filter( 'cron_schedules', 'my_interval' );
 
 //アクションフックを定期的に実行するスケジュールイベントの追加
 function my_activation() {
-	if ( ! wp_next_scheduled( 'set_two_day_event' ) ) {
-    wp_schedule_event( time(), 'twicedaily', 'set_two_day_event' );
+	if ( ! wp_next_scheduled( 'set_hours_event' ) ) {
+		wp_schedule_event( 1451574000, '1hours', 'set_hours_event' );
 	}
 }
-
 add_action('wp', 'my_activation');
+
+//ボットの判別
+function isBot() {
+	$bot_list = array (
+	'Googlebot',
+	'Yahoo! Slurp',
+	'Mediapartners-Google',
+	'msnbot',
+	'bingbot',
+	'MJ12bot',
+	'Ezooms',
+	'pirst; MSIE 8.0;',
+	'Google Web Preview',
+	'ia_archiver',
+	'Sogou web spider',
+	'Googlebot-Mobile',
+	'AhrefsBot',
+	'YandexBot',
+	'Purebot',
+	'Baiduspider',
+	'UnwindFetchor',
+	'TweetmemeBot',
+	'MetaURI',
+	'PaperLiBot',
+	'Showyoubot',
+	'JS-Kit',
+	'PostRank',
+	'Crowsnest',
+	'PycURL',
+	'bitlybot',
+	'Hatena',
+	'facebookexternalhit',
+	'NINJA bot',
+	'YahooCacheSystem',
+	'NHN Corp.',
+	'Steeler',
+	'DoCoMo',
+	);
+	$is_bot = false;
+	foreach ($bot_list as $bot) {
+		if (stripos($_SERVER['HTTP_USER_AGENT'], $bot) !== false) {
+			$is_bot = true;
+			break;
+		}
+	}
+	return $is_bot;
+}
+
+// ユーザープロフィールの項目のカスタマイズ
+function my_user_meta($wb)
+{
+//項目の追加
+$wb['twitter'] = 'twitter';
+$wb['instagram'] = 'instagram';
+$wb['facebook'] = 'facebook';
+$wb['position'] = '役職';
+
+return $wb;
+}
+add_filter('user_contactmethods', 'my_user_meta', 10, 1);

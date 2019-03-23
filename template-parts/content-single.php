@@ -46,7 +46,73 @@
 		</div>
 
 		<div class="single-author single-author-page-bottom">
-			<?php	moire_theme_single_posted(true); ?>
+			<?php $name = get_the_author_meta('user_nicename'); ?>
+			<div class='single-author-img'>
+				<img src="https://moire.xsrv.jp/wp-content/uploads/profile/profile_<?php echo $name; ?>.png" />
+			</div>
+			<div class='single-author-contents'>
+				<div class='single-author-contents-headline'>
+					<?php echo the_author_meta( 'position' ); ?>
+					<span><?php echo the_author_meta( 'display_name' ); ?></span>
+				</div>
+
+				<?php $description = get_the_author_meta( 'user_description' ); ?>
+				<?php if ($description !== '') { ?>
+					<div class='single-author-contents-desc'>
+						<?php echo $description; ?>
+					</div>
+				<?php }	?>
+
+				<div class="profile_text_content-button-wrap">
+          <a href='/author/<?php echo $name; ?>' class="profile_text_content-button">記事一覧</a>
+
+					<?php $twitter = get_the_author_meta( 'twitter' ); ?>
+					<?php if ($twitter !== '') { ?>
+						<a
+							href=<?php echo $twitter; ?>
+							target="_blank"
+							class="sns-social-wrap profile-sns-social-wrap"
+						>
+							<img
+								src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
+								alt="Twitter"
+								class="profile-sns-social-icon"
+							/>
+						</a>
+					<?php } ?>
+
+					<?php $instagram = get_the_author_meta( 'instagram' ); ?>
+					<?php if ($instagram !== '') { ?>
+						<a
+							href="<?php echo $instagram; ?>"
+							target="_blank"
+							class="sns-social-wrap profile-sns-social-wrap "
+						>
+							<img
+								src="https://moire.xsrv.jp/wp-content/uploads/IG_Glyph_Fill.psd-8.png"
+								alt="instagram"
+								class="profile-sns-social-icon"
+							/>
+						</a>
+					<?php } ?>
+
+					<?php $facebook = get_the_author_meta( 'facebook' ); ?>
+					<?php if ($facebook !== '') { ?>
+						<a
+							href="<?php echo $facebook; ?>"
+							target="_blank"
+							class="sns-social-wrap profile-sns-social-wrap "
+						>
+							<img
+								src="https://moire.xsrv.jp/wp-content/uploads/f-ogo_RGB_HEX-100.png"
+								alt="Facebook"
+								class="profile-sns-social-icon"
+							/>
+						</a>
+					<?php } ?>
+
+				</div>
+			</div>
 		</div>
 	</div>
 </article>

@@ -1135,6 +1135,14 @@ body {
 	font-weight: bold;
 }
 
+.color-red {
+	color: #ff2a36;
+}
+
+.yellow-marker {
+	background: linear-gradient(transparent 60%, #ecec4d 60%);
+}
+
 .font-20 {
 	font-size: 20px;
 }

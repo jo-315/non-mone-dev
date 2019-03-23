@@ -1140,7 +1140,12 @@ body {
 }
 
 .yellow-marker {
-	background: linear-gradient(transparent 60%, #ecec4d 60%);
+	background: linear-gradient(transparent 60%, #ffff2e 60%);
+}
+
+.font-18 {
+	font-size: 18px;
+  font-weight: bold;
 }
 
 .font-20 {

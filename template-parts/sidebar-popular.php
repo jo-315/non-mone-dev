@@ -58,5 +58,6 @@
 <?php
   $count += 1;
   endwhile;
+  wp_reset_postdata();
 ?>
 </div>

@@ -5,9 +5,9 @@
   </div>
 
   <!-- アクセスランキング -->
-  <div class="sidebar_item_wrapper">
+  <!-- <div class="sidebar_item_wrapper">
     <?php get_template_part( 'template-parts/sidebar', 'weekaccess' ); ?>
-  </div>
+  </div> -->
 
   <!-- moire -->
   <div class="sidebar_item_wrapper">

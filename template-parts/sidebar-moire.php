@@ -12,7 +12,7 @@
 
   <div class="sidebar_moire_desc">
     <h5>moire（モアレ）</h5>
-    社会貢献活動に繋ぐWebメディア
+    社会貢献が身近にある社会をつくる団体
 
     <div class="sidebar_moire_sns">
       <a

@@ -96,7 +96,7 @@
               </li>
               <li>
                 <a href="https://moire-org.com/" target="_blank">
-                  運営団体
+                  運営団体HP
                 </a>
               </li>
               <li>

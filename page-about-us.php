@@ -43,7 +43,7 @@ get_header();
         <h3>運営</h3>
       </div>
       <div class="about_content_wrap">
-        このHPは<a href="https://moire-org.com/" target="_blank">moire ~社会貢献活動に繋ぐWebメディア~</a>によって運営されています。
+        このHPは<a href="https://moire-org.com/" target="_blank">moire（モアレ）</a>によって運営されています。
       </div>
     </div>
   </div>

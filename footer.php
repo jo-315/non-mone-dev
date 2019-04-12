@@ -99,7 +99,7 @@
 				<div class="footer-moire-desc">
 					<span class="footer-moire-desc-header">
 						moire</br>
-						社会貢献活動に繋ぐWebメディア</br>
+						社会貢献が身近にある社会をつくる団体</br>
 					</span>
 					<span class="footer-moire-desc-link">
 						<a href="https://moire-org.com/" target="_blank">https://moire-org.com/</a>

@@ -189,7 +189,7 @@ if ( ! function_exists( 'moire_theme_posted_by_no_name' ) ) :
 		$name = get_the_author_meta('user_nicename');
 		if ( $name == 'moire' ) { return; };
 		$path = 'https://moire.xsrv.jp/wp-content/uploads/profile/profile_'. $name . '.png';
-		echo '<img src="'. $path .'">'; // WPCS: XSS OK.
+		echo '<img data-src="'. $path .'" class="lazyload">'; // WPCS: XSS OK.
 	}
 endif;
 
@@ -233,8 +233,13 @@ function moire_post_thumbnail($head = false) {
 		$class = 'head_thumbnail';
 	}
 
+	$thumb_id = get_post_thumbnail_id();
+  $thumb_img = wp_get_attachment_image_src($thumb_id, 'full');
+  $thumb_src = $thumb_img[0];
+  $thumb_alt = get_the_title();
+
 	echo '<div class="post-thumbnail-wrap ' . $class . '">';
-	the_post_thumbnail();
+  echo '<img data-src="'.$thumb_src.'" alt="'.$thumb_alt.'" class="lazyload">';
 	echo '</div>';
 }
 

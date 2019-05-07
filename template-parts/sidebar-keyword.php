@@ -13,7 +13,7 @@
   ?>
     <li>
       <a href="<?php echo get_tag_link( $tag->term_id ) ?>">
-        <p><?php echo $tag->name ?></p>
+        <p><?php echo $tag->name ?>（<?php echo $tag->count ?>）</p>
         <i class="fa fa-arrow-circle-right"></i>
       </a>
     </li>

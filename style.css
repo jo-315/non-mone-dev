@@ -1467,7 +1467,7 @@ topのナビゲーション
 header ヘッダー
  */
 .header_main {
-	height: 500px;
+	height: 480px;
 	padding-top: 50px;
 }
 
@@ -1559,7 +1559,7 @@ header ヘッダー
 }
 
 .glide_wrapper .glide__slide--active {
-	height: 400px !important;
+	height: 380px !important;
   margin: 5px 0 0;
 	opacity: 1 !important;
 	position: relative;

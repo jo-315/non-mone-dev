@@ -14,36 +14,26 @@
 				<div class="footer_nav_column">
 				  <span class="footer_nav_column_title">記事一覧</span>
 					<ul>
-					  <li>
-							<a href="/category/international-cooperation/">
-								国際協力
-							</a>
-						</li>
-						<li>
-							<a href="/category/nature-conservation">
-								自然保護
-							</a>
-						</li>
-						<li>
-							<a href="/category/regional-action">
-								地域の活動
-							</a>
-						</li>
-						<li>
-							<a href="/category/study-abroad">
-								留学
-							</a>
-						</li>
-						<li>
-							<a href="/category/intern">
-								インターン
-							</a>
-						</li>
-						<li>
-							<a href="/category/other">
-								その他
-							</a>
-						</li>
+						<?php
+							$categories = get_categories(
+								array(
+									'orderby' => 'count',
+									'order'   => 'desc'
+								)
+							);
+
+							foreach( $categories as $category ){
+								$ID = $category->term_id;
+								$slug = $category->slug;
+						?>
+
+							<li>
+								<a href='<?php echo get_category_link( $ID )?>' >
+									<?php echo $category->name ?>
+								</a>
+							</li>
+
+						<?php } ?>
 					</ul>
 				</div>
 				<div class="footer_nav_column">
@@ -91,8 +81,8 @@
 			<div class="footer-moire-wrap">
 				<div class="footer-moire-img">
 					<img
-						src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
-						class="footer-moire-logo"
+						data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
+						class="footer-moire-logo lazyload"
 					>
 				</div>
 
@@ -111,9 +101,9 @@
 							class="sns-social-wrap"
 						>
 							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/Twitter_Social_Icon_Rounded_Square_Color.png"
+								data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/Twitter_Social_Icon_Rounded_Square_Color.png"
 								alt="Twitter"
-								class="sns-social-icon"
+								class="sns-social-icon lazyload"
 							/>
 						</a>
 
@@ -123,9 +113,9 @@
 							class="sns-social-wrap"
 						>
 							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/f-ogo_RGB_HEX-100.svg"
+								data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/f-ogo_RGB_HEX-100.svg"
 								alt="Facebook"
-								class="sns-social-icon"
+								class="sns-social-icon lazyload"
 							/>
 						</a>
 					</div>

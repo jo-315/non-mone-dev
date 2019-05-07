@@ -31,36 +31,26 @@
           </a>
           <div class="header-main-navigation-child header-main-navigation-big-child">
             <ul>
-              <li>
-                <a href="/category/international-cooperation/">
-                  国際協力
-                </a>
-              </li>
-              <li>
-                <a href="/category/nature-conservation/">
-                  自然保護
-                </a>
-              </li>
-              <li>
-                <a href="/category/regional-action/">
-                  地域の活動
-                </a>
-              </li>
-              <li>
-                <a href="/category/study-abroad/">
-                  留学
-                </a>
-              </li>
-              <li>
-                <a href="/category/intern/">
-                  インターン
-                </a>
-              </li>
-              <li>
-                <a href="/category/other/">
-                  その他
-                </a>
-              </li>
+            <?php
+							$categories = get_categories(
+								array(
+									'orderby' => 'count',
+									'order'   => 'desc'
+								)
+							);
+
+							foreach( $categories as $category ){
+								$ID = $category->term_id;
+								$slug = $category->slug;
+						?>
+
+							<li>
+								<a href='<?php echo get_category_link( $ID )?>' >
+									<?php echo $category->name ?>
+								</a>
+							</li>
+
+						<?php } ?>
             </ul>
           </div>
         </li>

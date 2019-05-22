@@ -9,7 +9,7 @@
       'post_type' => 'post',
       'orderby' => 'meta_value_num',
       'meta_key' => '_liked',
-      'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
+      // 'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
       'posts_per_page'=> '3'
     ));
 

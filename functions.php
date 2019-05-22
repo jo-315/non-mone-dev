@@ -462,6 +462,7 @@ function my_user_meta($wb)
 $wb['twitter'] = 'twitter';
 $wb['instagram'] = 'instagram';
 $wb['facebook'] = 'facebook';
+$wb['youtube'] = 'youtube';
 $wb['position'] = '役職';
 
 return $wb;

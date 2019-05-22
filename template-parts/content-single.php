@@ -71,7 +71,7 @@
 						<a
 							href=<?php echo $twitter; ?>
 							target="_blank"
-							class="sns-social-wrap profile-sns-social-wrap"
+							class="sns-social-wrap"
 						>
 							<img
 								src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
@@ -86,7 +86,7 @@
 						<a
 							href="<?php echo $instagram; ?>"
 							target="_blank"
-							class="sns-social-wrap profile-sns-social-wrap "
+							class="sns-social-wrap "
 						>
 							<img
 								src="https://moire.xsrv.jp/wp-content/uploads/IG_Glyph_Fill.psd-8.png"
@@ -101,7 +101,7 @@
 						<a
 							href="<?php echo $facebook; ?>"
 							target="_blank"
-							class="sns-social-wrap profile-sns-social-wrap "
+							class="sns-social-wrap "
 						>
 							<img
 								src="https://moire.xsrv.jp/wp-content/uploads/f-ogo_RGB_HEX-100.png"

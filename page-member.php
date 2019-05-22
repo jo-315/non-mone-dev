@@ -60,7 +60,7 @@ get_header();
                   <a
                     href=<?php echo $twitter; ?>
                     target="_blank"
-                    class="sns-social-wrap profile-sns-social-wrap"
+                    class="sns-social-wrap"
                   >
                     <img
                       src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
@@ -75,7 +75,7 @@ get_header();
                   <a
                     href="<?php echo $instagram; ?>"
                     target="_blank"
-                    class="sns-social-wrap profile-sns-social-wrap "
+                    class="sns-social-wrap "
                   >
                     <img
                       src="https://moire.xsrv.jp/wp-content/uploads/IG_Glyph_Fill.psd-8.png"
@@ -90,7 +90,7 @@ get_header();
                   <a
                     href="<?php echo $facebook; ?>"
                     target="_blank"
-                    class="sns-social-wrap profile-sns-social-wrap "
+                    class="sns-social-wrap "
                   >
                     <img
                       src="https://moire.xsrv.jp/wp-content/uploads/f-ogo_RGB_HEX-100.png"
@@ -99,7 +99,22 @@ get_header();
                     />
                   </a>
                 <?php } ?>
-                </a>
+
+                <?php $youtube = get_the_author_meta( 'youtube', $userId ); ?>
+                <?php if ($youtube !== '') { ?>
+                  <a
+                    href="<?php echo $youtube; ?>"
+                    target="_blank"
+                    class="sns-social-wrap "
+                  >
+                    <img
+                      src="<?php echo get_stylesheet_directory_uri(); ?>/images/yt_icon_rgb.png"
+                      alt="youtube"
+                      class="profile-sns-social-icon"
+                    />
+                  </a>
+                <?php } ?>
+
               </div>
             </div>
           </div>

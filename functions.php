@@ -401,12 +401,12 @@ function my_interval( $schedules ) {
 add_filter( 'cron_schedules', 'my_interval' );
 
 //アクションフックを定期的に実行するスケジュールイベントの追加
-function my_activation() {
-	if ( ! wp_next_scheduled( 'set_hours_event' ) ) {
-		wp_schedule_event( 1451574000, '1hours', 'set_hours_event' );
-	}
-}
-add_action('wp', 'my_activation');
+// function my_activation() {
+// 	if ( ! wp_next_scheduled( 'set_hours_event' ) ) {
+// 		wp_schedule_event( 1451574000, '1hours', 'set_hours_event' );
+// 	}
+// }
+// add_action('wp', 'my_activation');
 
 //ボットの判別
 function isBot() {

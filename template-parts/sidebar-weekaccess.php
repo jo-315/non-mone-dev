@@ -70,7 +70,7 @@
     wp_reset_postdata();
   ?>
   <?php else : ?>
-    <p>アクセスランキングはまだ集計されていません。</p>
+    <p>カウントの集計中...</p>
   <?php endif; ?>
 
 </div>

@@ -80,7 +80,9 @@ get_header();
 					  ?>
 
 								<li class="related-post-item-wrap">
-									<div class="related-post-item-top">
+
+									<div class="related-post-img-wrapper">
+										<?php the_post_thumbnail('large'); ?>
 									</div>
 
 									<div class="entry-header">
@@ -109,8 +111,7 @@ get_header();
 										</div>
 									</div>
 
-									<div class="related-post-img-wrapper">
-										<?php the_post_thumbnail('large'); ?>
+									<div class="related-post-item-bottom">
 									</div>
 
 									<a href="<?php the_permalink(); ?>"></a>

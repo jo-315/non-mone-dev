@@ -19,7 +19,6 @@
 .left-content {
 	width: calc(100% - 300px);
 	float: left;
-	text-align: right;
 }
 
 @media screen and (max-width: 1260px) {

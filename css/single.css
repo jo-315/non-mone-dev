@@ -54,7 +54,7 @@ Content
 
 .single-content h2 {
  font-weight: bold;
- background: linear-gradient(transparent 70%, #2fcdb4 70%);
+ background: linear-gradient(transparent 80%, #ff2a36 50%);
  text-transform: none;
 }
 
@@ -73,7 +73,7 @@ Content
  font-size: 1em;/*サイズ*/
  left: 0;/*アイコンの位置*/
  top: 0;/*アイコンの位置*/
- color: #2fcdb4; /*アイコン色*/
+ color: #ff2a36; /*アイコン色*/
 }
 
 .single-content h3 {
@@ -86,7 +86,7 @@ Content
  @media screen and (max-width: 650px) {
    .single-content-area {
      width: 100%;
-     padding: 0 20px;
+     padding: 0 10px;
      margin: 20px auto 0;
    }
  }
@@ -223,7 +223,6 @@ Content
    height: 230px;
    float: left;
    margin-bottom: 15px;
-   box-shadow: 3px 3px 10px -3px;
    position: relative;
  }
 
@@ -236,7 +235,7 @@ Content
  }
 
  .related-post-item-wrap .entry-header{
-   padding-bottom: 5px;
+   padding: 10px 0px 20px 10px;
  }
 
  .related-post-item-wrap .archive-item-tag {
@@ -260,16 +259,17 @@ Content
    width: 100%;
  }
 
- .related-post-item-top {
-   height: 10px;
-   background: #2fcdb4
+ .related-post-item-bottom {
+   height: 2px;
+   background: #cccccc;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
  }
 
  .related-post-img-wrapper {
    height: 100px;
-   position: absolute;
    width: 100%;
-   bottom: 0;
  }
 
  .related-post-img-wrapper img {
@@ -284,7 +284,7 @@ Content
    padding-bottom: 10px;
    margin-bottom: 30px;
    font-weight: bold;
-   background: linear-gradient(transparent 90%, #2fcdb4 70%);
+   background: linear-gradient(transparent 90%, #ff2a36 70%);
  }
 
  .related-post-title span {
@@ -294,12 +294,6 @@ Content
  .related-post-content {
    margin: 0;
    padding: 0;
- }
-
- @media screen and (max-width: 770px) {
-  .related-post-content {
-    overflow: auto;
-  }
  }
 
  @media screen and (max-width: 650px) {

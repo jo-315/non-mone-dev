@@ -1806,7 +1806,6 @@ portfolio
 
 .portfolio_wrapper__header li {
 	margin-bottom: 5px;
-	box-shadow: 1px 1px 5px -3px;
 }
 
 .portfolio_wrapper__header div {
@@ -1832,7 +1831,6 @@ portfolio
 .portfolio_wrapper__footer li {
 	margin-bottom: 5px;
 	display: inline-block;
-	box-shadow: 3px 3px 10px -3px;
 }
 
 .portfolio_wrapper__footer div {
@@ -2827,10 +2825,6 @@ footer
 
   .entry-header {
   	padding-bottom: 30px;
-  }
-
-  .archive-content-inner-wrap {
-  	text-align: center;
   }
 
   .archive-content-inner-wrap .byline {

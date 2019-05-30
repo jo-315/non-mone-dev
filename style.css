@@ -1156,6 +1156,45 @@ body {
 	text-align: center;
 }
 
+.comment_block {
+	margin: 30px 0;
+}
+
+.comment_block img {
+	float: left;
+	margin-top: 2px;
+}
+
+.comment_block .rectangular {
+	width: 75px;
+}
+
+.comment_block div {
+	display: inline-block;
+	width: calc(100% - 85px);
+	padding-left: 20px;
+	margin: 0 !important;
+}
+
+.comment_block p {
+	margin: 0 !important;
+}
+
+@media screen and (max-width: 750px) {
+	.comment_block img {
+		margin-top: 15px;
+	}
+
+	.comment_block .rectangular {
+		width: 50px;
+	}
+
+	.comment_block div {
+		width: calc(100% - 55px);
+		padding-left: 15px;
+	}
+	}
+
 /* 404 Not Found */
 .no_page_content_block {
   width: 100%;

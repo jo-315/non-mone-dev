@@ -13,9 +13,9 @@
 
   <!-- <div class="sidebar_follow"> -->
     <!-- アクセスランキング -->
-    <div class="sidebar_item_wrapper">
+    <!-- <div class="sidebar_item_wrapper">
       <?php get_template_part( 'template-parts/sidebar', 'weekaccess' ); ?>
-    </div>
+    </div> -->
     <div class="sidebar_follow">
     <!-- キーワード -->
     <div class="sidebar_item_wrapper">

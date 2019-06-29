@@ -80,6 +80,9 @@
                         case 'festival':
                           echo '祭りが人を熱くさせる';
                           break;
+                        case 'interview':
+                          echo 'いろんな話、聞いてきました！';
+                          break;
                         case 'other':
                           echo 'カテゴライズできないニッチな活動';
                           break;

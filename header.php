@@ -83,6 +83,9 @@
                         case 'interview':
                           echo 'いろんな話、聞いてきました！';
                           break;
+                        case 'challenge':
+                          echo 'こんなこと、やってみました！';
+                          break;
                         case 'other':
                           echo 'カテゴライズできないニッチな活動';
                           break;

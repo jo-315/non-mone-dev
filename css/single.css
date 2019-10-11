@@ -340,7 +340,7 @@ Content
   .sidebar_follow {
     position: -webkit-sticku;
     position: sticky;
-    top: 60px;
+    top: 90px;
   }
 
   @media screen and (max-width: 1158px) {

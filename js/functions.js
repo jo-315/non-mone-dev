@@ -6,14 +6,21 @@
 // toggle button
 jQuery(function($) {
   $('.header-menu-toggle').click(() => {
-    const toggleMenue = $('.header-main-navigation')
+    const toggleMenue = $('.header-main-navigation__res')
     if(toggleMenue.hasClass('active')){
       toggleMenue.removeClass('active');
-      $('.header-main-navigation').slideUp();
+      $('.header-main-navigation__res').slideUp();
     } else {
       toggleMenue.addClass('active');
-      $('.header-main-navigation').slideDown();
+      $('.header-main-navigation__res').slideDown();
     }  });
+});
+
+jQuery(function($) {
+  $('.header-main-navigation-closebutton').click(() => {
+    $('.header-main-navigation__res').removeClass('active');
+    $('.header-main-navigation__res').slideUp();
+  });
 });
 
 /*

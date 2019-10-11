@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
   <div class="content_wrapper">
+    <div>新着記事</div>
     <div class="left-content">
       <div class="main-content">
         <?php
